@@ -1,4 +1,4 @@
 - [Syllabus](Syllabus.md)
 - [Schedule](Schedule.md)
-- [Assignments](assignments/README.md)
+- [Assignments](../assignments/README.md)
 - [Resources](Resources.md)
