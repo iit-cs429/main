@@ -1,4 +1,4 @@
-- [[Syllabus]]
-- [[Schedule]]
-- [[Assignments]]
-- [[Resources]]
+- [Syllabus](Syllabus.md)
+- [Schedule](Schedule.md)
+- [Assignments](assignments/README.md)
+- [Resources](Resources.md)
