@@ -1,4 +1,5 @@
-## Assignment 0: Indexing
+## Assignment 0: Indexing (50 points) 
+*Expected time: 4-6 hours*
 
 1. Get started with git and python by following the instructions at [Setup.md](Setup.md)
 
