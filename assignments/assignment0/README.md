@@ -1,3 +1,3 @@
 ## Assignment 0: Indexing
 
-1. [Setup git and python](Setup.md)
+1. Get started with git and python by following the instructions at [Setup.md](Setup.md)
