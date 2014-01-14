@@ -7,12 +7,17 @@
 3. Install the Python/SciPy stack on your computer (if you haven't already) by follwing the instructions here: <http://continuum.io/downloads>.
 
 4. Install Git
-  - Windows: Download the installer from <http://msysgit.github.io/> and run it
+  - Windows:
+    - Download the installer from <http://msysgit.github.io/> and run it
+    - Download and install the [GitHub app](https://github-windows.s3.amazonaws.com/GitHubSetup.exe)
   - Mac/Linux: Check if git is already installed by running `which git`
     - To install on Linux: `sudo apt-get install git` (Ubuntu) or `yum install git-core` (Fedora)
     - To install on Mac: <http://sourceforge.net/projects/git-osx-installer/>
 
-5. Clone your private class repository
+5. Setup Git: <https://help.github.com/articles/set-up-git>
+  - Mac/Linux only: Generate SSH keys <https://help.github.com/articles/generating-ssh-keys>
+
+6. Clone your private class repository
 ```
 git clone https://github.com/iit-cs429/[iit-username].git
 ```
@@ -23,14 +28,14 @@ E.g., for me this would be:
   - You should have read/write (pull/push) access to your private repository.
   - This is where you will submit assignments.
 
-6. Update your private repository with `git pull`
+7. Update your private repository with `git pull`
   - I will add files to your repository for each assignment.
 
-7. Modify the README.md file in your repository to list your name.
+8. Modify the README.md file in your repository to list your name.
   - Checkin this change with:
 
-```
-git add README.md 
-git commit -m 'my first commit'
-git push
-```
+  ```
+  git add README.md 
+  git commit -m 'my first commit'
+  git push
+  ```
