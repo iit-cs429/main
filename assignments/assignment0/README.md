@@ -1,3 +1,3 @@
 ## Assignment 0: Indexing
 
-1. Setup git and python
+1. [Setup git and python](Setup.md)
