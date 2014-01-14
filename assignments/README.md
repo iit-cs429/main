@@ -1,5 +1,4 @@
 
-
 To submit an assignment:
 
 1. Update your private repository to get the assignment files:
@@ -19,7 +18,14 @@ To submit an assignment:
   git push
   ```
 
-4. Double-check that everything works, by cloning your repository into a new directory and executing all tests.
+4. Double-check that you don't have any outstanding changes to commit:
+  ```
+  git status
+  # On branch master
+  nothing to commit, working directory clean
+  ```
+
+5. Double-check that everything works, by cloning your repository into a new directory and executing all tests.
   ```
   cd 
   mkdir tmp
