@@ -4,7 +4,7 @@
 
 2. Learn git by completing the online training course at <http://try.github.io>.
 
-3. Install the Python/SciPy stack on your computer (if you haven't already) by follwing the instructions here: <http://continuum.io/downloads>.
+3. Install the Python/SciPy stack on your computer (if you haven't already) by follwing the instructions here: <http://continuum.io/downloads>. We'll be using Python 2.7, **not** Python 3.
 
 4. Install Git
   - Windows:
