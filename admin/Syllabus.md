@@ -16,7 +16,7 @@ You can use the [electronic version](http://nlp.stanford.edu/IR-book/) of this b
 
 ### Grading
 
-- 350 points - Assignments (7 @ 50 points each)
+- 350 points - [Assignments](../assignments) (7 @ 50 points each)
 - 100 points - Midterm
 - 200 points - Final
 - 50 points - Quizzes / In-class assignments (5 @ 10 points each)
