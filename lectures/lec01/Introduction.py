@@ -45,26 +45,35 @@
 # # Simplest information retrieval problem
 # 
 
-# In[ ]:
+# In[14]:
 
 documents = ['dog', 'cat', 'zebra', 'cat']
 
 
-# In[ ]:
+# In[26]:
 
 def search(documents, query):
-    pass
+    return [doc for doc in documents if doc == query]
 
 
-# In[ ]:
+# In[27]:
 
 'return [doc for doc in documents if doc == query]'
 
 
-# In[ ]:
+# Out[27]:
+
+#     'return [doc for doc in documents if doc == query]'
+
+# In[28]:
 
 print search(documents, 'cat')
 
+
+# Out[28]:
+
+#     ['cat', 'cat']
+# 
 
 # Runtime?
 
@@ -72,15 +81,15 @@ print search(documents, 'cat')
 
 # # Most documents have more than one word...
 
-# In[ ]:
+# In[31]:
 
 documents = [['dog', 'cat'], ['cat', 'zebra'], ['dog', 'puma']]
 
 
-# In[ ]:
+# In[29]:
 
 def search(documents, query):
-    pass
+    return [doc for doc in documents if query in doc]
 
 
 # In[ ]:
@@ -88,10 +97,15 @@ def search(documents, query):
 ' return [doc for doc in documents if query in doc]'
 
 
-# In[ ]:
+# In[32]:
 
 print search(documents, 'cat')
 
+
+# Out[32]:
+
+#     [['dog', 'cat'], ['cat', 'zebra']]
+# 
 
 # Runtime?
 
@@ -103,7 +117,7 @@ print search(documents, 'cat')
 # 
 # **Postings List:** List of ids for documents containing the word.
 
-# In[ ]:
+# In[33]:
 
 # Map each word to the list of indices of documents that contain it.
 index = {'dog': [0, 2],
@@ -112,10 +126,10 @@ index = {'dog': [0, 2],
          'puma': [2]}
 
 
-# In[ ]:
+# In[34]:
 
 def indexed_search(documents, index, query):
-    pass
+    return [documents[doc_id] for doc_id in index[query]]
 
 
 # In[ ]:
@@ -123,10 +137,15 @@ def indexed_search(documents, index, query):
 '    return [documents[doc_id] for doc_id in index[query]] '
 
 
-# In[ ]:
+# In[37]:
 
 print indexed_search(documents, index, 'cat')
 
+
+# Out[37]:
+
+#     [['dog', 'cat'], ['cat', 'zebra']]
+# 
 
 # **Runtime?**
 
@@ -151,7 +170,7 @@ print indexed_search(documents, index, 'cat')
 # <br>
 # *cat* $\rightarrow  \{0, 1\}$
 
-# In[ ]:
+# In[38]:
 
 def and_search(documents, index, queries):
     doc_ids = set([doc_id for doc_id in index[queries[0]]])
@@ -160,10 +179,15 @@ def and_search(documents, index, queries):
     return [documents[doc_id] for doc_id in doc_ids]
 
 
-# In[ ]:
+# In[41]:
 
 print and_search(documents, index, ['cat', 'dog'])
 
+
+# Out[41]:
+
+#     [['dog', 'cat']]
+# 
 
 # **Runtime?**
 
@@ -214,13 +238,18 @@ print and_search(documents, index, ['cat', 'dog'])
 
 # # Survey results
 
-# In[ ]:
+# In[42]:
 
 counts = [float(line) for line in open('python_counts.txt')]
 print counts
 
 
-# In[ ]:
+# Out[42]:
+
+#     [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 2.0, 2.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 10.0, 30.0]
+# 
+
+# In[43]:
 
 # This allows us to plot directly to the notebook.
 get_ipython().magic(u'pylab inline')
@@ -229,4 +258,16 @@ hist(counts, 30)
 xlabel('number of Python programs written')
 ylabel('number of students')
 show()
+
+
+# Out[43]:
+
+#     Populating the interactive namespace from numpy and matplotlib
+# 
+
+# image file:
+
+# In[ ]:
+
+
 

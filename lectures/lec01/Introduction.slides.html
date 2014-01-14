@@ -1785,7 +1785,7 @@ text-align: inherit;
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[14]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">documents</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;dog&#39;</span><span class="p">,</span> <span class="s">&#39;cat&#39;</span><span class="p">,</span> <span class="s">&#39;zebra&#39;</span><span class="p">,</span> <span class="s">&#39;cat&#39;</span><span class="p">]</span>
@@ -1800,11 +1800,11 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[26]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="n">documents</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
-    <span class="k">pass</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">doc</span> <span class="k">for</span> <span class="n">doc</span> <span class="ow">in</span> <span class="n">documents</span> <span class="k">if</span> <span class="n">doc</span> <span class="o">==</span> <span class="n">query</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -1816,11 +1816,30 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[27]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="s">&#39;return [doc for doc in documents if doc == query]&#39;</span>
 </pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[27]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+&apos;return [doc for doc in documents if doc == query]&apos;
+</pre>
+
+</div>
+</div>
 
 </div>
 </div>
@@ -1831,11 +1850,27 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[28]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">print</span> <span class="n">search</span><span class="p">(</span><span class="n">documents</span><span class="p">,</span> <span class="s">&#39;cat&#39;</span><span class="p">)</span>
 </pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stdout">
+<pre>
+[&apos;cat&apos;, &apos;cat&apos;]
+
+</pre>
+</div>
+</div>
 
 </div>
 </div>
@@ -1860,7 +1895,7 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[31]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">documents</span> <span class="o">=</span> <span class="p">[[</span><span class="s">&#39;dog&#39;</span><span class="p">,</span> <span class="s">&#39;cat&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s">&#39;cat&#39;</span><span class="p">,</span> <span class="s">&#39;zebra&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s">&#39;dog&#39;</span><span class="p">,</span> <span class="s">&#39;puma&#39;</span><span class="p">]]</span>
@@ -1874,11 +1909,11 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[29]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="n">documents</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
-    <span class="k">pass</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">doc</span> <span class="k">for</span> <span class="n">doc</span> <span class="ow">in</span> <span class="n">documents</span> <span class="k">if</span> <span class="n">query</span> <span class="ow">in</span> <span class="n">doc</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -1905,11 +1940,27 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[32]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">print</span> <span class="n">search</span><span class="p">(</span><span class="n">documents</span><span class="p">,</span> <span class="s">&#39;cat&#39;</span><span class="p">)</span>
 </pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stdout">
+<pre>
+[[&apos;dog&apos;, &apos;cat&apos;], [&apos;cat&apos;, &apos;zebra&apos;]]
+
+</pre>
+</div>
+</div>
 
 </div>
 </div>
@@ -1937,7 +1988,7 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[33]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c"># Map each word to the list of indices of documents that contain it.</span>
@@ -1956,11 +2007,11 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[34]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">def</span> <span class="nf">indexed_search</span><span class="p">(</span><span class="n">documents</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
-    <span class="k">pass</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">documents</span><span class="p">[</span><span class="n">doc_id</span><span class="p">]</span> <span class="k">for</span> <span class="n">doc_id</span> <span class="ow">in</span> <span class="n">index</span><span class="p">[</span><span class="n">query</span><span class="p">]]</span>
 </pre></div>
 
 </div>
@@ -1987,11 +2038,27 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[37]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">print</span> <span class="n">indexed_search</span><span class="p">(</span><span class="n">documents</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="s">&#39;cat&#39;</span><span class="p">)</span>
 </pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stdout">
+<pre>
+[[&apos;dog&apos;, &apos;cat&apos;], [&apos;cat&apos;, &apos;zebra&apos;]]
+
+</pre>
+</div>
+</div>
 
 </div>
 </div>
@@ -2029,7 +2096,7 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[38]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">def</span> <span class="nf">and_search</span><span class="p">(</span><span class="n">documents</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">queries</span><span class="p">):</span>
@@ -2048,11 +2115,27 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[41]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">print</span> <span class="n">and_search</span><span class="p">(</span><span class="n">documents</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="p">[</span><span class="s">&#39;cat&#39;</span><span class="p">,</span> <span class="s">&#39;dog&#39;</span><span class="p">])</span>
 </pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stdout">
+<pre>
+[[&apos;dog&apos;, &apos;cat&apos;]]
+
+</pre>
+</div>
+</div>
 
 </div>
 </div>
@@ -2122,12 +2205,28 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[42]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">counts</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">line</span><span class="p">)</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;python_counts.txt&#39;</span><span class="p">)]</span>
 <span class="k">print</span> <span class="n">counts</span>
 </pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stdout">
+<pre>
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 2.0, 2.0, 3.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 10.0, 30.0]
+
+</pre>
+</div>
+</div>
 
 </div>
 </div>
@@ -2138,7 +2237,7 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[43]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c"># This allows us to plot directly to the notebook.</span>
@@ -2153,8 +2252,148 @@ In&nbsp;[]:
 </div>
 </div>
 
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stdout">
+<pre>
+Populating the interactive namespace from numpy and matplotlib
+
+</pre>
 </div>
-    </div></section>
+</div>
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_display_data">
+
+
+<img src="data:image/png;base64,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
+">
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    </div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre>
+</pre></div>
+
+</div>
+</div>
+
+</div></section>
     </section>
 </div>
 </div>
