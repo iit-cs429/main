@@ -1,4 +1,3 @@
-
 To submit an assignment:
 
 1. Update your private repository to get the assignment files:
@@ -30,7 +29,7 @@ To submit an assignment:
   cd 
   mkdir tmp
   cd tmp
-  git clone https://github.com/iit-cs429/[your_private_repo]
-  cd assignments/assignment0
+  git clone https://github.com/iit-cs429/[your_iit_id]
+  cd [your_iit_id]/assignments/assignment0
   [...run any relevant scripts/tests]
   ```
