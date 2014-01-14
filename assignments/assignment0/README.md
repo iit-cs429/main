@@ -1,2 +1,2 @@
-## Assignment 0: Ranking I
+## Assignment 0: Indexing
 
