@@ -5,7 +5,10 @@
 - [Munich](http://www.cis.uni-muenchen.de/~hs/teach/13s/ir/)
 - [European Summer School](http://nlp.stanford.edu/IR-book/essir2011)
 
+### Data
 
-### Other Resources
+- [Glasgow](http://ir.dcs.gla.ac.uk/resources/test_collections/)
+
+### Other Resource Lists
 
 - [Stanford Resource List](http://nlp.stanford.edu/IR-book/information-retrieval.html)
