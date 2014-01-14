@@ -5,4 +5,5 @@ This repository contains class files for CS 429: Information Retrieval, taught a
 The contents are organized as follows:
 
 - [`admin`](admin): the syllabus and related resources
-- [`assignments`](assignments): instructions and code for homework assignments.
+- [`assignments`](assignments): instructions and code for homework assignments
+- [`lectures`](lectures): class notes
