@@ -12,6 +12,8 @@
   - Check that all tests pass and that the output matches the expected output.
     - The code has [doctests](http://docs.python.org/2/library/doctest.html), which you can run with `python -m doctest boolean_search.py -v`
 
+4. For help submitting, see the checklist [here](../README.md).
+
 
 The expected output of running the tests is:
 
