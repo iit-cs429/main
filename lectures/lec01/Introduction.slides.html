@@ -1785,7 +1785,7 @@ text-align: inherit;
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[54]:
+In&nbsp;[]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">documents</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;dog&#39;</span><span class="p">,</span> <span class="s">&#39;cat&#39;</span><span class="p">,</span> <span class="s">&#39;zebra&#39;</span><span class="p">,</span> <span class="s">&#39;cat&#39;</span><span class="p">]</span>
@@ -1800,11 +1800,11 @@ In&nbsp;[54]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[55]:
+In&nbsp;[]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="n">documents</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">[</span><span class="n">doc</span> <span class="k">for</span> <span class="n">doc</span> <span class="ow">in</span> <span class="n">documents</span> <span class="k">if</span> <span class="n">doc</span> <span class="o">==</span> <span class="n">query</span><span class="p">]</span>
+    <span class="k">pass</span>
 </pre></div>
 
 </div>
@@ -1816,30 +1816,11 @@ In&nbsp;[55]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[56]:
+In&nbsp;[]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="s">&#39;return [doc for doc in documents if doc == query]&#39;</span>
 </pre></div>
-
-</div>
-</div>
-
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt output_prompt">
-    Out[56]:</div>
-<div class="box-flex1 output_subarea output_pyout">
-
-
-<pre>
-&apos;return [doc for doc in documents if doc == query]&apos;
-</pre>
-
-</div>
-</div>
 
 </div>
 </div>
@@ -1850,27 +1831,11 @@ In&nbsp;[56]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[57]:
+In&nbsp;[]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">print</span> <span class="n">search</span><span class="p">(</span><span class="n">documents</span><span class="p">,</span> <span class="s">&#39;cat&#39;</span><span class="p">)</span>
 </pre></div>
-
-</div>
-</div>
-
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_stream output_stdout">
-<pre>
-[&apos;cat&apos;, &apos;cat&apos;]
-
-</pre>
-</div>
-</div>
 
 </div>
 </div>
@@ -1895,7 +1860,7 @@ In&nbsp;[57]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[58]:
+In&nbsp;[]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">documents</span> <span class="o">=</span> <span class="p">[[</span><span class="s">&#39;dog&#39;</span><span class="p">,</span> <span class="s">&#39;cat&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s">&#39;cat&#39;</span><span class="p">,</span> <span class="s">&#39;zebra&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s">&#39;dog&#39;</span><span class="p">,</span> <span class="s">&#39;puma&#39;</span><span class="p">]]</span>
@@ -1909,43 +1874,42 @@ In&nbsp;[58]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[59]:
+In&nbsp;[]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="n">documents</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">[</span><span class="n">doc</span> <span class="k">for</span> <span class="n">doc</span> <span class="ow">in</span> <span class="n">documents</span> <span class="k">if</span> <span class="n">query</span> <span class="ow">in</span> <span class="n">doc</span><span class="p">]</span>
+    <span class="k">pass</span>
 </pre></div>
 
 </div>
 </div>
 
 </div>
-    </div><div class="fragment">
+    </div><aside class="notes">
     
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[60]:
+In&nbsp;[]:
 </div>
 <div class="input_area box-flex1">
-<div class="highlight"><pre><span class="k">print</span> <span class="n">search</span><span class="p">(</span><span class="n">documents</span><span class="p">,</span> <span class="s">&#39;cat&#39;</span><span class="p">)</span>
+<div class="highlight"><pre><span class="s">&#39; return [doc for doc in documents if query in doc]&#39;</span>
 </pre></div>
 
 </div>
 </div>
 
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_stream output_stdout">
-<pre>
-[[&apos;dog&apos;, &apos;cat&apos;], [&apos;cat&apos;, &apos;zebra&apos;]]
-
-</pre>
 </div>
+    </aside><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
 </div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="k">print</span> <span class="n">search</span><span class="p">(</span><span class="n">documents</span><span class="p">,</span> <span class="s">&#39;cat&#39;</span><span class="p">)</span>
+</pre></div>
 
 </div>
 </div>
@@ -1973,7 +1937,7 @@ In&nbsp;[60]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[61]:
+In&nbsp;[]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c"># Map each word to the list of indices of documents that contain it.</span>
@@ -1992,43 +1956,42 @@ In&nbsp;[61]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[62]:
+In&nbsp;[]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">def</span> <span class="nf">indexed_search</span><span class="p">(</span><span class="n">documents</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">[</span><span class="n">documents</span><span class="p">[</span><span class="n">doc_id</span><span class="p">]</span> <span class="k">for</span> <span class="n">doc_id</span> <span class="ow">in</span> <span class="n">index</span><span class="p">[</span><span class="n">query</span><span class="p">]]</span>
+    <span class="k">pass</span>
 </pre></div>
 
 </div>
 </div>
 
 </div>
-    </div><div class="fragment">
+    </div><aside class="notes">
     
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[63]:
+In&nbsp;[]:
 </div>
 <div class="input_area box-flex1">
-<div class="highlight"><pre><span class="k">print</span> <span class="n">indexed_search</span><span class="p">(</span><span class="n">documents</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="s">&#39;cat&#39;</span><span class="p">)</span>
+<div class="highlight"><pre><span class="s">&#39;    return [documents[doc_id] for doc_id in index[query]] &#39;</span>
 </pre></div>
 
 </div>
 </div>
 
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_stream output_stdout">
-<pre>
-[[&apos;dog&apos;, &apos;cat&apos;], [&apos;cat&apos;, &apos;zebra&apos;]]
-
-</pre>
 </div>
+    </aside><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
 </div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="k">print</span> <span class="n">indexed_search</span><span class="p">(</span><span class="n">documents</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="s">&#39;cat&#39;</span><span class="p">)</span>
+</pre></div>
 
 </div>
 </div>
@@ -2066,7 +2029,7 @@ In&nbsp;[63]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[64]:
+In&nbsp;[]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">def</span> <span class="nf">and_search</span><span class="p">(</span><span class="n">documents</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">queries</span><span class="p">):</span>
@@ -2085,27 +2048,11 @@ In&nbsp;[64]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[65]:
+In&nbsp;[]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">print</span> <span class="n">and_search</span><span class="p">(</span><span class="n">documents</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="p">[</span><span class="s">&#39;cat&#39;</span><span class="p">,</span> <span class="s">&#39;dog&#39;</span><span class="p">])</span>
 </pre></div>
-
-</div>
-</div>
-
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_stream output_stdout">
-<pre>
-[[&apos;dog&apos;, &apos;cat&apos;]]
-
-</pre>
-</div>
-</div>
 
 </div>
 </div>
@@ -2165,23 +2112,49 @@ In&nbsp;[65]:
 <li>Assignments turned in to GitHub</li>
 <li>Let's look at the <a href="https://github.com/iit-cs429/main/blob/master/admin/Syllabus.md">syllabus</a>, <a href="https://github.com/iit-cs429/main/blob/master/admin/Schedule.md">schedule</a>, and <a href="https://github.com/iit-cs429/main/blob/master/assignments/assignment0/">first assignment</a>.</li>
 </ul>
-</div>
+</div></section>
+    </section><section>
+    <section>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="survey-results">Survey results</h1>
-</div>
+</div><div class="fragment">
+    
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[65]:
+In&nbsp;[]:
 </div>
 <div class="input_area box-flex1">
-<div class="highlight"><pre>
+<div class="highlight"><pre><span class="n">counts</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">line</span><span class="p">)</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;python_counts.txt&#39;</span><span class="p">)]</span>
+<span class="k">print</span> <span class="n">counts</span>
 </pre></div>
 
 </div>
 </div>
 
-</div></section>
+</div>
+    </div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># This allows us to plot directly to the notebook.</span>
+<span class="o">%</span> <span class="n">pylab</span> <span class="n">inline</span>
+<span class="n">figure</span><span class="p">()</span>
+<span class="n">hist</span><span class="p">(</span><span class="n">counts</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s">&#39;number of Python programs written&#39;</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s">&#39;number of students&#39;</span><span class="p">)</span>
+<span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div></section>
     </section>
 </div>
 </div>
