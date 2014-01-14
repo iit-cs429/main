@@ -3,11 +3,11 @@
 1. Get started with git and python by following the instructions at [Setup.md](Setup.md)
 
 2. Complete the short-answer part of the homework at [ShortAnswer.md](ShortAnswer.md).
-  - You will edit the copy of ShortAnswer.md in *your* private repository under assignment1.
+  - You will edit the copy of ShortAnswer.md in *your* private repository under assignment0.
   - Be sure to push your modifications to GitHub.
 
 3. Complete the coding part of the homework by completing `boolean_search.py`.
-  - Once again, you will edit the copy of `boolean_search.py` in *your* private repository under assignment1.
+  - Once again, you will edit the copy of `boolean_search.py` in *your* private repository under assignment0.
   - Be sure to push your modifications to GitHub.
   - Check that all tests pass and that the output matches the expected output.
     - The code has [doctests](http://docs.python.org/2/library/doctest.html), which you can run with `python -m doctest boolean_search.py -v`
