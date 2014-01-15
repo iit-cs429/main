@@ -2,8 +2,8 @@
 | ----- |----------------------------------|--------------------------------------------------------|-------------------------------
 |**Part I: Indexing**|
 | 1/14  | Boolean Search                   | [Ch1](http://nlp.stanford.edu/IR-book/pdf/01bool.pdf)  |
-| 1/16  | Indexing I                       | [Ch2](http://nlp.stanford.edu/IR-book/pdf/02voc.pdf)   |
-| 1/21  | Indexing II                      | [Ch2](http://nlp.stanford.edu/IR-book/pdf/02voc.pdf)   |
+| 1/16  | Indexing I: stemming/stopping    | [Ch2](http://nlp.stanford.edu/IR-book/pdf/02voc.pdf)   |
+| 1/21  | Indexing II: phrases, skip lists | [Ch2](http://nlp.stanford.edu/IR-book/pdf/02voc.pdf)   |
 | 1/23  | Dictionaries                     | [Ch3](http://nlp.stanford.edu/IR-book/pdf/03dict.pdf)  | [A0](../assignments/assignment0)
 | 1/28  | Tokenizing, stemming             | [Ch4](http://nlp.stanford.edu/IR-book/pdf/04const.pdf) |
 | 1/30  | Index compression                | [Ch5](http://nlp.stanford.edu/IR-book/pdf/05comp.pdf)  |
