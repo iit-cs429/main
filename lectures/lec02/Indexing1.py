@@ -24,7 +24,7 @@
 # 
 # document $\xrightarrow{tokenize}$ (tokens, types) $\xrightarrow{normalize}$ terms $\xrightarrow{index}$ inverted index
 
-# In[111]:
+# In[1]:
 
 # 1. Collect documents.
 document = "he didn't know where he worked."
@@ -89,12 +89,12 @@ index = {'he': [0],
 #     *Simplest approach*: split on whitespace.
 # 
 
-# In[112]:
+# In[2]:
 
 print document.split()
 
 
-# Out[112]:
+# Out[2]:
 
 #     ['he', "didn't", 'know', 'where', 'he', 'worked.']
 # 
@@ -140,100 +140,100 @@ print document.split()
 # 
 # (source: <http://nltk.org/book/ch03.html>)
 
-# In[2]:
+# In[3]:
 
 import re  # Regular expression module
 print re.split('x', 'axbxc')
 
 
-# Out[2]:
+# Out[3]:
 
 #     ['a', 'b', 'c']
 # 
 
-# In[25]:
+# In[4]:
 
 print re.split('\+\+', 'hi+++there')
 
 
-# Out[25]:
+# Out[4]:
 
 #     ['hi', '+there']
 # 
 
-# In[38]:
+# In[5]:
 
 print re.split('([\W\s]|t)', "what's up?")
 
 
-# Out[38]:
+# Out[5]:
 
 #     ['wha', 't', '', "'", 's', ' ', 'up', '?', '']
 # 
 
-# In[29]:
+# In[6]:
 
 text = "A first-class ticket to the U.S.A. isn't expensive?"
 print re.split(' ', text)
 
 
-# Out[29]:
+# Out[6]:
 
 #     ['A', 'first-class', 'ticket', 'to', 'the', 'U.S.A.', "isn't", 'expensive?']
 # 
 
 # How to remove punctuation?
 
-# In[159]:
+# In[7]:
 
 print re.split('\W+', text)           # \W=not a word character; +=1 or more
 
 
-# Out[159]:
+# Out[7]:
 
 #     ['A', 'first', 'class', 'ticket', 'to', 'the', 'U', 'S', 'A', 'isn', 't', 'expensive', '']
 # 
 
-# In[160]:
+# In[8]:
 
 print re.findall('\w+', text)         # \w=a word character [a-zA-Z0-9_]
 
 
-# Out[160]:
+# Out[8]:
 
 #     ['A', 'first', 'class', 'ticket', 'to', 'the', 'U', 'S', 'A', 'isn', 't', 'expensive']
 # 
 
-# In[161]:
+# In[9]:
 
 # group punctuation with following letters
 print re.findall('\w+|\S\w*', text)  # \S=not a space; |=OR
 
 
-# Out[161]:
+# Out[9]:
 
 #     ['A', 'first', '-class', 'ticket', 'to', 'the', 'U', '.S', '.A', '.', 'isn', "'t", 'expensive', '?']
 # 
 
 # How to keep hyphenated words and contractions together?
 
-# In[43]:
+# In[10]:
 
 print re.findall("\w+(?:[-']\w+)*|[-.(]+|\S\w*", text)
 # (?: specifies what to match, not what to capture
 
 
-# Out[43]:
+# Out[10]:
 
 #     ['A', 'first-class', 'ticket', 'to', 'the', 'U', '.', 'S', '.', 'A', '.', "isn't", 'expensive', '?']
 # 
 
-# In[44]:
+# In[11]:
 
 print re.findall("(?:[A-Z]\.)+|\w+(?:[-']\w+)*|[-.(]+|\S\w*", text)
 
 
-# Out[44]:
+# Out[11]:
 
 #     ['A', 'first-class', 'ticket', 'to', 'the', 'U.S.A.', "isn't", 'expensive', '?']
 # 
@@ -300,7 +300,7 @@ print re.findall("(?:[A-Z]\.)+|\w+(?:[-']\w+)*|[-.(]+|\S\w*", text)
 # 
 # 
 
-# In[91]:
+# In[12]:
 
 def stem(word):
     for suffix in ['ies', 's', 'ed', 'ing']: # order matters!
@@ -315,25 +315,20 @@ def stem(word):
 # - **over-stemming**: merge types that should not be merged.
 # - **under-stemming**: fail to merge types that should be merged.
 
-# In[46]:
+# In[13]:
 
 types = ['tied', 'ties', 'tis', 'bed', 'cities']
 print '\n'.join([stem(w) for w in types])
 
 
-# Out[46]:
+# Out[13]:
 
-
-    ---------------------------------------------------------------------------
-    NameError                                 Traceback (most recent call last)
-
-    <ipython-input-46-7154f802d81c> in <module>()
-          1 types = ['tied', 'ties', 'tis', 'bed', 'cities']
-    ----> 2 print '\n'.join([stem(w) for w in types])
-    
-
-    NameError: name 'stem' is not defined
-
+#     ti
+#     t
+#     ti
+#     b
+#     cit
+# 
 
 # **How does this affect search?**
 
@@ -341,7 +336,7 @@ print '\n'.join([stem(w) for w in types])
 # 
 # - Very commonly used stemmer with a complex set of heuristics.
 
-# In[ ]:
+# In[14]:
 
 from nltk.stem import PorterStemmer # See nltk.org (`pip install nltk`)
 porter = PorterStemmer()
@@ -349,23 +344,17 @@ print types
 print '\n'.join([porter.stem(x) for x in types])
 
 
-# Out[]:
+# Out[14]:
 
+#     ['tied', 'ties', 'tis', 'bed', 'cities']
+#     tie
+#     tie
+#     ti
+#     bed
+#     citi
+# 
 
-    ---------------------------------------------------------------------------
-    NameError                                 Traceback (most recent call last)
-
-    <ipython-input-45-15fdbdb8f5d3> in <module>()
-          1 from nltk.stem import PorterStemmer # See nltk.org (`pip install nltk`)
-          2 porter = PorterStemmer()
-    ----> 3 print types
-          4 print '\n'.join([porter.stem(x) for x in types])
-
-
-    NameError: name 'types' is not defined
-
-
-# In[107]:
+# In[15]:
 
 types = ['bed', 'kiss',
          'tied', 'tis',
@@ -379,7 +368,7 @@ porter_results = [porter.stem(x) for x in types]
 print '\n'.join(porter_results)
 
 
-# Out[107]:
+# Out[15]:
 
 #     bed
 #     kiss
@@ -401,7 +390,7 @@ print '\n'.join(porter_results)
 
 # # WordNet Lemmatizer
 
-# In[106]:
+# In[16]:
 
 from nltk.stem.wordnet import WordNetLemmatizer
 # See description: https://wordnet.princeton.edu/wordnet/man/morphy.7WN.html
@@ -411,7 +400,7 @@ print 'type, porter, lemmatizer\n'
 print '\n'.join([str(t) for t in zip(types, porter_results, lemm_results)])
 
 
-# Out[106]:
+# Out[16]:
 
 #     type, porter, lemmatizer
 #     
