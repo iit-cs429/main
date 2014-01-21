@@ -1,0 +1,1 @@
+convert -density 400 -resize 200%  diagrams.pdf diagrams.png

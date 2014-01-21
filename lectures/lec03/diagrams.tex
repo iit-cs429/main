@@ -1,0 +1,67 @@
+\documentclass[border=5mm]{scrartcl}
+\usepackage{amsmath,tikz}
+\usepackage[T1]{fontenc}
+\usetikzlibrary{calc,matrix,positioning}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{eqnarray*} % puts one equation per page.
+
+\begin{document}
+
+\begin{eqnarray*}
+cat & \rightarrow & \mathbf{2}, 4, {\mathbf 8}, 16, 19,  23,  28,  43 \\
+dog & \rightarrow & 1,  \mathbf{2}, 3, 5, {\mathbf 8}, 41, 51, 60, 71\\
+\mathbf{merged} & \rightarrow & 2, 8\\
+\end{eqnarray*}
+
+  \begin{eqnarray*}
+    \begin{tikzpicture}[>=stealth,baseline,anchor=base,inner sep=1pt]
+      \matrix (foil) [matrix of math nodes,nodes={minimum height=0.5em}] {
+         & cat & \rightarrow & \mathbf{2},& 4,& {\mathbf 8},& 16,& 19, & 23, & 28, & 43 &\\[1em]
+         & dog & \rightarrow & 1, & \mathbf{2},& 3,& 5, & {\mathbf 8},& 41,& 51,& 60,& 71&\\
+      };
+      \path[->] ($(foil-1-4.north)+(0,.5ex)$) edge[blue,bend left=45] node {16} ($(foil-1-7.north)+(0,.5ex)$);
+      \path[->] ($(foil-1-7.north)+(0,.5ex)$) edge[blue,bend left=45] node {28} ($(foil-1-10.north)+(0,.5ex)$);
+      \path[->] ($(foil-2-4.south)-(0,.5ex)$) edge[blue,bend right=45] node {5} ($(foil-2-7.south)-(0,.5ex)$);
+      \path[->] ($(foil-2-7.south)-(0,.5ex)$) edge[blue,bend right=45] node {51} ($(foil-2-10.south)-(0,.5ex)$);
+    \end{tikzpicture}
+  \end{eqnarray*}
+
+
+  \begin{eqnarray*}
+    \begin{tikzpicture}[>=stealth,baseline,anchor=base,inner sep=1pt]
+      \matrix (foil) [matrix of math nodes,nodes={minimum height=0.5em}] {
+         & dog & \rightarrow & \mathbf{2},& 3,& 8,& 11,& 17,& 21,& 31, & 140, & \mathbf{151}\\
+      };
+      \path[->] ($(foil-1-4.north)+(0,.5ex)$) edge[blue,bend left=45] node {8} ($(foil-1-6.north)+(0,.5ex)$);
+      \path[->] ($(foil-1-7.north)+(0,.5ex)$) edge[blue,bend left=45] node {21} ($(foil-1-9.north)+(0,.5ex)$);
+      \path[->] ($(foil-1-10.north)+(0,.5ex)$) edge[blue,bend left=45] node {151} ($(foil-1-12.north)+(0,.5ex)$);
+    \end{tikzpicture}
+  \end{eqnarray*}
+
+
+\begin{eqnarray*}
+the & \rightarrow & 1, 2, 3, 4, 8, 11, 17, 21, 31, 41, 64, 128, 140, 151\\
+cat & \rightarrow & 1, 2, 4, 41, 64, 128,151\\
+dog & \rightarrow & 1, 2 , 3, 8, 11, 17, 21, 31, 140, 151\\
+jumped & \rightarrow & 2, 151\\
+\hbox{``}the\hbox{ }cat\hbox{''} & \rightarrow & 1, 2, 4, 41, 64, 128, 151\\
+\hbox{``}cat\hbox{ }dog\hbox{''} & \rightarrow & 1, 2, 151\\
+\hbox{``}dog\hbox{ }jumped\hbox{''} & \rightarrow & 2, 151\\
+\end{eqnarray*}
+
+
+  \begin{eqnarray*}
+    \begin{tikzpicture}[>=stealth,baseline,anchor=base,inner sep=1pt]
+      \matrix (foil) [matrix of math nodes,nodes={minimum height=0.5em}] {
+         & 3, & 5, & 9, & 15, & 24, & 39, & 60, & 68, & 75, & 81, & 84, & 89, & 92, & 96, & 97, & 100, & 115 &\\[1em]
+         & 3, & 5, & 89, & 95, & 97, & 99, & 100, & 101 &\\
+      };
+      \path[->] ($(foil-1-2.north)+(0,.5ex)$) edge[blue,bend left=45] node {24} ($(foil-1-6.north)+(0,.5ex)$);
+      \path[->] ($(foil-1-6.north)+(0,.5ex)$) edge[blue,bend left=45] node {75} ($(foil-1-10.north)+(0,.5ex)$);
+      \path[->] ($(foil-1-10.north)+(0,.5ex)$) edge[blue,bend left=45] node {92} ($(foil-1-14.north)+(0,.5ex)$);
+      \path[->] ($(foil-1-14.north)+(0,.5ex)$) edge[blue,bend left=45] node {115} ($(foil-1-18.north)+(0,.5ex)$);
+    \end{tikzpicture}
+  \end{eqnarray*}
+
+
+\end{document}
