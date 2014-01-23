@@ -1,0 +1,81 @@
+\documentclass[border=5mm]{scrartcl}
+\usepackage{amsmath,tikz}
+\usepackage[T1]{fontenc}
+\usetikzlibrary{arrows,calc,matrix,positioning}
+% \usepackage[active,tightpage]{preview}
+% \PreviewEnvironment{eqnarray*} % puts one equation per page.
+
+
+
+\tikzset{
+  treenode/.style = {align=center, inner sep=0pt, text centered,
+    font=\sffamily},
+  arn_n/.style = {treenode, circle, black, font=\sffamily\bfseries, draw=black,
+    fill=white, text width=1.5em},% arbre rouge noir, noeud noir
+}
+
+\begin{document}
+
+\begin{tikzpicture}[->,>=stealth',level/.style={sibling distance = 5cm/#1,
+  level distance = 1.5cm}] 
+\node [arn_n] {}
+    child{ node [arn_n] {} }
+    child{ node [arn_n] {}
+            child{ node [arn_n] {} }
+            child{ node [arn_n] {}
+		child{ node [arn_n] {}}
+		child{ node [arn_n] {}
+                  child{ node [arn_n] {}}
+                  child{ node [arn_n] {}}
+                }
+            }
+	 }
+;
+\end{tikzpicture}
+
+\newpage
+\begin{tikzpicture}[->,>=stealth',level 1/.style={sibling distance=40mm},level 2/.style={sibling distance=15mm},level distance = 1.5cm]
+\node [arn_n] {}
+    child{ node [arn_n] {} 
+      child{ node [arn_n]{} }
+      child{ node [arn_n]{} }
+    }
+    child{ node [arn_n] {} 
+      child{ node [arn_n]{} }
+      child{ node [arn_n]{} }
+    }
+    child{ node [arn_n] {}
+      child{ node [arn_n] {} }
+      child{ node [arn_n] {} }
+      child{ node [arn_n] {} }
+      child{ node [arn_n] {} }
+    }
+;
+\end{tikzpicture}
+
+
+
+\newpage
+\begin{tikzpicture}[->,>=stealth',level 1/.style={sibling distance=40mm},level 2/.style={sibling distance=15mm},level distance = 1.5cm]
+\node [arn_n] {}
+    child{ node [arn_n, label=right:{aa-ac}] {} 
+      child{ node [arn_n]{} }
+      child{ node [arn_n]{} }
+    }
+    child{ node [arn_n, label=right:{ad-am}] {} 
+      child{ node [arn_n]{} }
+      child{ node [arn_n]{} }
+    }
+    child{ node [arn_n, label=right:{an-az}] {}
+      child{ node [arn_n, label={ana*}] {}
+        child{node [arn_n]{}}
+        child{node [arn_n]{}}
+      }
+      child{ node [arn_n] {} }
+      child{ node [arn_n] {} }
+      child{ node [arn_n] {} }
+    }
+;
+\end{tikzpicture}
+
+\end{document}
