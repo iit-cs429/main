@@ -3,9 +3,9 @@
 ||**Part I: Indexing**|
 | 1/14  | Boolean Search                   | [Ch1](http://nlp.stanford.edu/IR-book/pdf/01bool.pdf) | |[L01](../lectures/lec01)
 | 1/16  | Indexing I: stemming/stopping    | [Ch2](http://nlp.stanford.edu/IR-book/pdf/02voc.pdf)   | |[L02](../lectures/lec02)
-| 1/21  | Indexing II: phrases, skip lists, position | [Ch2](http://nlp.stanford.edu/IR-book/pdf/02voc.pdf)   |
+| 1/21  | Indexing II: phrases, skip lists, position | [Ch2](http://nlp.stanford.edu/IR-book/pdf/02voc.pdf)   | | [L03](../lectures/lec03)
 | 1/23  | Dictionaries                     | [Ch3](http://nlp.stanford.edu/IR-book/pdf/03dict.pdf)  | [A0](../assignments/assignment0)
-| 1/28  | Tokenizing, stemming             | [Ch4](http://nlp.stanford.edu/IR-book/pdf/04const.pdf) |
+| 1/28  | Scalable indexing             | [Ch4](http://nlp.stanford.edu/IR-book/pdf/04const.pdf) |
 | 1/30  | Index compression                | [Ch5](http://nlp.stanford.edu/IR-book/pdf/05comp.pdf)  |
 || **Part II: Ranking**  |
 | 2/04  | Vector space model               | [Ch6](http://nlp.stanford.edu/IR-book/pdf/06vect.pdf)  |
