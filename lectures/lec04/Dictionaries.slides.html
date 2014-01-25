@@ -1840,7 +1840,7 @@ In&nbsp;[135]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[136]:
+In&nbsp;[150]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">print</span> <span class="nb">hash</span><span class="p">(</span><span class="s">&#39;dog&#39;</span><span class="p">)</span>
@@ -1875,10 +1875,10 @@ In&nbsp;[136]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[137]:
+In&nbsp;[151]:
 </div>
 <div class="input_area box-flex1">
-<div class="highlight"><pre><span class="c"># What happens when to objects return the same hash?</span>
+<div class="highlight"><pre><span class="c"># What happens when two objects return the same hash?</span>
 <span class="k">print</span> <span class="nb">hash</span><span class="p">(</span><span class="o">-</span><span class="mi">799031295820617361</span><span class="p">)</span>
 </pre></div>
 
@@ -2003,7 +2003,7 @@ In&nbsp;[137]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[138]:
+In&nbsp;[160]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c"># Slow, recursive Levenshtein implementation (inspired by &lt;http://en.wikipedia.org/wiki/Levenshtein_distance&gt;)</span>
@@ -2034,7 +2034,7 @@ In&nbsp;[138]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[139]:
+In&nbsp;[162]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">print</span> <span class="n">leven</span><span class="p">(</span><span class="s">&#39;fast&#39;</span><span class="p">,</span> <span class="s">&#39;cats&#39;</span><span class="p">)</span>
@@ -2084,7 +2084,7 @@ In&nbsp;[139]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[140]:
+In&nbsp;[163]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c"># Fetch a list of word counts.</span>
@@ -2133,7 +2133,7 @@ count(ajshdlfkjahdlkjh)= 1
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[141]:
+In&nbsp;[164]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c"># Find the element of words that has minimum edit distance to word</span>
@@ -2150,7 +2150,7 @@ In&nbsp;[141]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[142]:
+In&nbsp;[168]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">print</span> <span class="n">min_leven</span><span class="p">([</span><span class="s">&#39;apple&#39;</span><span class="p">,</span> <span class="s">&#39;banana&#39;</span><span class="p">,</span> <span class="s">&#39;chair&#39;</span><span class="p">],</span> <span class="s">&#39;bannana&#39;</span><span class="p">)</span>
@@ -2203,7 +2203,7 @@ In&nbsp;[143]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[144]:
+In&nbsp;[171]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c"># Return all single edits to word</span>
@@ -2245,7 +2245,7 @@ In&nbsp;[144]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[145]:
+In&nbsp;[172]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="o">%</span><span class="k">pylab</span> <span class="n">inline</span>
@@ -2269,12 +2269,12 @@ Populating the interactive namespace from numpy and matplotlib
 </div>
 
 <div class="hbox output_area"><div class="prompt output_prompt">
-    Out[145]:</div>
+    Out[172]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
 
 <pre>
-[&lt;matplotlib.lines.Line2D at 0x1139b24d0&gt;]
+[&lt;matplotlib.lines.Line2D at 0x111ce59d0&gt;]
 </pre>
 
 </div>
@@ -2382,7 +2382,7 @@ JCkL/h//eLssk/t7SgAAAABJRU5ErkJggg==
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[146]:
+In&nbsp;[174]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c"># Return the subset of words that is in word_counts.</span>
@@ -2415,7 +2415,7 @@ set([&apos;apple&apos;])
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[147]:
+In&nbsp;[175]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">def</span> <span class="nf">correct</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
@@ -2430,7 +2430,7 @@ In&nbsp;[147]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[148]:
+In&nbsp;[177]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">print</span> <span class="n">correct</span><span class="p">(</span><span class="s">&#39;apple&#39;</span><span class="p">)</span>   <span class="c"># apple is in word_counts: known([word])</span>

@@ -65,7 +65,7 @@ print index['dog']  # hash lookup, O(1)
 
 # How does this work?
 
-# In[136]:
+# In[150]:
 
 print hash('dog')
 print hash('cat')
@@ -73,19 +73,19 @@ print hash('cat')
 # http://stackoverflow.com/questions/2070276/where-can-i-find-source-or-algorithm-of-pythons-hash-function
 
 
-# Out[136]:
+# Out[150]:
 
 #     -1925086808205474835
 #     -799031295820617361
 # 
 
-# In[137]:
+# In[151]:
 
-# What happens when to objects return the same hash?
+# What happens when two objects return the same hash?
 print hash(-799031295820617361)
 
 
-# Out[137]:
+# Out[151]:
 
 #     -799031295820617361
 # 
@@ -161,7 +161,7 @@ print hash(-799031295820617361)
 # 
 # cats $\xrightarrow{insert(f)}$ **f**cats $\xrightarrow{delete(c)}$ fats $\xrightarrow{delete(t)}$ fas $\xrightarrow{delete(s)}$ fa $\xrightarrow{insert(s)}$ fa**s** $\xrightarrow{insert(t)}$ fas**t** (6 operations)
 
-# In[138]:
+# In[160]:
 
 # Slow, recursive Levenshtein implementation (inspired by <http://en.wikipedia.org/wiki/Levenshtein_distance>)
 def leven(s, t):
@@ -183,12 +183,12 @@ def leven(s, t):
              leven(s[:-1], t[:-1]) + cost);  # e.g., leven(fas, cat) + cost (for substituting 't' for 's')
 
 
-# In[139]:
+# In[162]:
 
 print leven('fast', 'cats')
 
 
-# Out[139]:
+# Out[162]:
 
 #     3
 # 
@@ -204,7 +204,7 @@ print leven('fast', 'cats')
 
 # *Tie-breaker*: term that is most frequent
 
-# In[140]:
+# In[163]:
 
 # Fetch a list of word counts.
 
@@ -224,7 +224,7 @@ print 'count(apple)=', word_counts['apple']
 print 'count(ajshdlfkjahdlkjh)=', word_counts['ajshdlfkjahdlkjh']
 
 
-# Out[140]:
+# Out[163]:
 
 #     read 29136 words
 #     count(a)= 21161
@@ -232,7 +232,7 @@ print 'count(ajshdlfkjahdlkjh)=', word_counts['ajshdlfkjahdlkjh']
 #     count(ajshdlfkjahdlkjh)= 1
 # 
 
-# In[141]:
+# In[164]:
 
 # Find the element of words that has minimum edit distance to word
 # Return word and the distance.
@@ -241,12 +241,12 @@ def min_leven(words, word):
     return min(distances, key=lambda x: x[1])
 
 
-# In[142]:
+# In[168]:
 
 print min_leven(['apple', 'banana', 'chair'], 'bannana')
 
 
-# Out[142]:
+# Out[168]:
 
 #     ('banana', 1)
 # 
@@ -266,7 +266,7 @@ print min_leven(['apple', 'banana', 'chair'], 'bannana')
 # 
 # 
 
-# In[144]:
+# In[171]:
 
 # Return all single edits to word
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
@@ -281,29 +281,29 @@ def edits(word):
 print len(edits('cat')), 'edits for cat:', edits('cat')
 
 
-# Out[144]:
+# Out[171]:
 
 #     182 edits for cat: set(['caqt', 'ucat', 'cdt', 'ctat', 'ciat', 'vcat', 'cvat', 'ycat', 'caht', 'cut', 'jat', 'caty', 'clt', 'hat', 'cyat', 'capt', 'icat', 'zcat', 'fat', 'dat', 'cet', 'caot', 'catz', 'hcat', 'bat', 'crt', 'cayt', 'cakt', 'clat', 'cmt', 'cvt', 'ceat', 'cwat', 'cjat', 'cnat', 'acat', 'cft', 'cabt', 'cnt', 'cajt', 'aat', 'cwt', 'cast', 'czat', 'csat', 'cqat', 'cit', 'cart', 'jcat', 'cfat', 'cazt', 'pcat', 'catd', 'caat', 'cgt', 'ctt', 'cati', 'cait', 'cot', 'cawt', 'xcat', 'cta', 'act', 'ncat', 'cxt', 'ckat', 'calt', 'ca', 'dcat', 'cadt', 'zat', 'cato', 'ct', 'crat', 'cata', 'catb', 'catc', 'tcat', 'cate', 'catf', 'catg', 'cath', 'yat', 'catj', 'catk', 'xat', 'catm', 'catn', 'catl', 'catp', 'ocat', 'catr', 'cats', 'cht', 'catu', 'catv', 'catw', 'catx', 'iat', 'bcat', 'wat', 'catq', 'vat', 'cqt', 'cact', 'cyt', 'rcat', 'gat', 'cant', 'cgat', 'mcat', 'eat', 'kcat', 'caz', 'cay', 'cax', 'cas', 'car', 'caq', 'cap', 'caw', 'cav', 'cau', 'cat', 'cak', 'caj', 'cai', 'cah', 'cao', 'can', 'cam', 'cal', 'cac', 'cab', 'caa', 'cag', 'caf', 'cae', 'cad', 'tat', 'chat', 'fcat', 'caft', 'lcat', 'uat', 'czt', 'rat', 'at', 'cbt', 'catt', 'scat', 'sat', 'qat', 'qcat', 'pat', 'wcat', 'cuat', 'oat', 'nat', 'cst', 'cavt', 'cjt', 'mat', 'cxat', 'caet', 'cmat', 'ccat', 'cagt', 'cpat', 'kat', 'lat', 'gcat', 'caxt', 'cdat', 'coat', 'cct', 'camt', 'ckt', 'caut', 'cpt', 'cbat', 'ecat'])
 # 
 
 # How many edits? *n* deletions, *n-1* transpositions, *26n* substitutions, and *26(n+1)* insertions, for a total of *54n+25.*
 
-# In[145]:
+# In[172]:
 
 get_ipython().magic(u'pylab inline')
 plot([54 * x + 25 for x in range(20)])
 
 
-# Out[145]:
+# Out[172]:
 
 #     Populating the interactive namespace from numpy and matplotlib
 # 
 
-#     [<matplotlib.lines.Line2D at 0x1139b24d0>]
+#     [<matplotlib.lines.Line2D at 0x111ce59d0>]
 
 # image file:
 
-# In[146]:
+# In[174]:
 
 # Return the subset of words that is in word_counts.
 def known(words):
@@ -312,26 +312,26 @@ def known(words):
 print known(['apple', 'zzzzasdfasdfz'])
 
 
-# Out[146]:
+# Out[174]:
 
 #     set(['apple'])
 # 
 
-# In[147]:
+# In[175]:
 
 def correct(word):
     candidates = known([word]) or known(edits(word)) or [word] # 'or' returns whichever is the first non-empty value
     return max(candidates, key=word_counts.get)
 
 
-# In[148]:
+# In[177]:
 
 print correct('apple')   # apple is in word_counts: known([word])
 print correct('accross') # accross is not in word_counts, but across is: known(edits(word))
 print correct('zebraa')  # zebra is not in word_counts: [word]
 
 
-# Out[148]:
+# Out[177]:
 
 #     apple
 #     across
