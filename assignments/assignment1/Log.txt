@@ -1,0 +1,98 @@
+
+
+QUERY: lion 
+RESULTS:
+How do you keep a lion from charging?     Take away its credit cards.
+
+
+QUERY: What has 
+RESULTS:
+What has four legs and goes booo?     A cow with a cold
+What has 10 letters and starts with gas?     An automobile.
+
+
+QUERY: why because 
+RESULTS:
+
+
+
+QUERY: has four legs 
+RESULTS:
+What has four legs and goes booo?     A cow with a cold
+
+
+QUERY: did the chicken 
+RESULTS:
+Why did the chicken cross the road?     He wanted to prove to the armadillo that it could be done.
+Why did the chicken go to the library?     To check out a bawk, bawk, bawk,bawk.
+
+
+QUERY: why did the 
+RESULTS:
+Why did the elephant decide not to move?     Because he couldn't lift his trunk.
+Why did the strawberry cross the road?     Because his mother was in a jam.
+Why did the turkey cross the road?     To get to the chicken
+Why did the chicken cross the road?     He wanted to prove to the armadillo that it could be done.
+Why did the dalmation need glasses?     He was seeing spots.
+Why did the chicken go to the library?     To check out a bawk, bawk, bawk,bawk.
+Why does the man wish he could be a guitar player in a room full of beautiful girls?     Because if he was a guitar player, he would have his pick!
+Why did the ghost float across the road?     Because he couldn't walk.
+
+
+QUERY: vies 
+RESULTS:
+
+
+
+QUERY: the moo-vies 
+RESULTS:
+Where do cows go to have fun?     The moo-vies!
+
+
+QUERY: why did 
+RESULTS:
+Why did the elephant decide not to move?     Because he couldn't lift his trunk.
+Why did the strawberry cross the road?     Because his mother was in a jam.
+Why do we not tell secrets in a corn patch?     Too many ears!
+Why did the turkey cross the road?     To get to the chicken
+Why did the chicken cross the road?     He wanted to prove to the armadillo that it could be done.
+Why did the dalmation need glasses?     He was seeing spots.
+Why did they bury the battery?     Because it was dead.
+Why did the chicken go to the library?     To check out a bawk, bawk, bawk,bawk.
+Why does the man wish he could be a guitar player in a room full of beautiful girls?     Because if he was a guitar player, he would have his pick!
+Why did the ghost float across the road?     Because he couldn't walk.
+
+
+QUERY: why does 
+RESULTS:
+Why did the elephant decide not to move?     Because he couldn't lift his trunk.
+Why did the strawberry cross the road?     Because his mother was in a jam.
+Why do we not tell secrets in a corn patch?     Too many ears!
+Why did the turkey cross the road?     To get to the chicken
+Why did the chicken cross the road?     He wanted to prove to the armadillo that it could be done.
+Why did the dalmation need glasses?     He was seeing spots.
+Why did they bury the battery?     Because it was dead.
+Why did the chicken go to the library?     To check out a bawk, bawk, bawk,bawk.
+Why does the man wish he could be a guitar player in a room full of beautiful girls?     Because if he was a guitar player, he would have his pick!
+Why did the ghost float across the road?     Because he couldn't walk.
+
+
+QUERY: what's 
+RESULTS:
+What's black, white, green and bumpy?     A pickle wearing a tuxedo
+What's yellow and writes?     A ball point banana.
+What's green and sings?     "Elvis Parsley!!"
+
+
+TOP 11 BIGRAMS
+what do=18
+do the=15
+why do=10
+to the=9
+what is=7
+do you=7
+say to=6
+the road=5
+you call=4
+is a=4
+in a=4
