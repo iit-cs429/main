@@ -101,7 +101,7 @@ def search(index, query):
     3. Intersect the positional postings lists of each word in the query, by
     calling phrase_intersect.
 
-    E.g., below we search for documents containing the phrase 'a b c':
+    E.g., below we search for documents containing the phrase 'a b':
     >>> search({'a': [[0, 4], [1, 1]], 'b': [[0, 5], [1, 10]], 'c': [[0, 6], [1, 11]]}, 'a b')
     [0]
     """
