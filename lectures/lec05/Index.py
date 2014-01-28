@@ -24,40 +24,6 @@
 # 
 # - How do we build an index that does not fit into memory? 
 
-# - Disk seek time basics
-#   - How long to read X bytes? Depends on if contiguous
-# - Indexing steps:
-#   - term-> term_id
-#   - doc-> term-doc_id pairs
-#   - sort by terms, then by docids
-#   
-# - External sorting (Single machine)
-#   - minimize random disk seeks
-#   
-#   - Block sort-based indexing (BSBI)
-#     - split documents
-#     - sort term-docid pairs in memory, writing result to disk
-#     - merge results
-#     - ["the dog jumped", "the cat jumped"] -> (the, 0), (dog, 0), (jumped, 0), (the, 1), (cat, 1), (jumped, 1) -> (cat, [1]), (dog, [0]), (jumped, [0, 1]), (the, [0, 1])
-#     
-#   - Single-pass in-memory indexing (SPIMI)
-#     - What if can't fit map from term->index in memory?
-#     - separete dictionary for each block
-#     - create postings lists on the fly, rather than print all postings then sort.
-#     - sort postings lists, rather than individual postings
-#     - ["the dog jumped", "the cat jumped"] -> (dog, [0]), (jumped, [0]), (the, [0]), ; (cat, [1]), (jumped, [1]), (the, [1]) -> (cat, [1]), (dog, [0]), (jumped, [0, 1]), (the, [0, 1])
-#     
-# - Distributed indexing
-#   - MapReduce
-#     - split documents (~100MB)
-#     - (assume shared vocabulary for now)
-#     - Map phase:
-#       - generate key/value pairs for each document
-#       - write to local intermediate files (segment files) (split files by term, e.g., a-g,g-p,q-z)
-#     - Reduce phase:
-#       - Inverter: collects all segment files (e.g., a-g from all mappers), reads, sorts, and merges.
-#     
-
 # # Building an index
 # 
 # - Up to now, we've assumed everything fits in memory.
