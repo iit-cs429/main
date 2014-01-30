@@ -1808,7 +1808,7 @@ text-align: inherit;
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[66]:
+In&nbsp;[1]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c"># BSBI: Create one postings list per block of documents.</span>
@@ -1923,10 +1923,7 @@ block 1 grouped postings= [(0, [3]), (1, [2]), (2, [3]), (4, [2]), (5, [2]), (6,
 <ul>
 <li>separate dictionary for each block</li>
 <li>create postings lists on the fly, rather than collecting all postings then sorting.</li>
-<li>sort postings lists, rather than individual postings
-<ul>
-<li>[&quot;the dog jumped&quot;, &quot;the cat jumped&quot;] -&gt; (dog, [0]), (jumped, [0]), (the, [0]), ; (cat, [1]), (jumped, [1]), (the, [1]) -&gt; (cat, [1]), (dog, [0]), (jumped, [0, 1]), (the, [0, 1]</li>
-</ul></li>
+<li>sort postings lists, rather than individual postings</li>
 </ul>
 </div></section>
     </section><section>
@@ -1934,7 +1931,7 @@ block 1 grouped postings= [(0, [3]), (1, [2]), (2, [3]), (4, [2]), (5, [2]), (6,
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[67]:
+In&nbsp;[2]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c"># SPIMI: Create one postings list per block of documents.</span>
@@ -2028,6 +2025,11 @@ Block 1 [&apos;a [2]&apos;, &apos;dog [2]&apos;, &apos;jumped [3]&apos;, &apos;r
 <h1 id="mapreduce">MapReduce</h1>
 <ul>
 <li>What if we had 100K servers?</li>
+</ul>
+</div><div class="fragment">
+    
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li><strong>MapReduce:</strong></li>
 <li>A distributed programming framework</li>
 <li>Breaks large data into smaller data, called <strong>splits</strong></li>
@@ -2043,7 +2045,8 @@ Block 1 [&apos;a [2]&apos;, &apos;dog [2]&apos;, &apos;jumped [3]&apos;, &apos;r
 <li>Output: list of output values</li>
 </ul></li>
 </ul>
-</div></section>
+</div>
+    </div></section>
     </section><section>
     <section>
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -2091,7 +2094,7 @@ reduce(key, values):
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[76]:
+In&nbsp;[3]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">re</span>

@@ -53,7 +53,7 @@
 # 
 # (source: [MRS](http://nlp.stanford.edu/IR-book/pdf/04const.pdf))
 
-# In[66]:
+# In[1]:
 
 # BSBI: Create one postings list per block of documents.
 from collections import defaultdict
@@ -93,7 +93,7 @@ for block_id, block in enumerate(blocks):
 # Then, merge blocks in linear time.
 
 
-# Out[66]:
+# Out[1]:
 
 #     block 0 postings= [(0, 0), (1, 0), (2, 0), (0, 1), (3, 1), (2, 1)]
 #     vocab= [('jumped', 2), ('the', 0), ('dog', 1), ('cat', 3)]
@@ -132,9 +132,8 @@ for block_id, block in enumerate(blocks):
 # - separate dictionary for each block
 # - create postings lists on the fly, rather than collecting all postings then sorting.
 # - sort postings lists, rather than individual postings
-#     - ["the dog jumped", "the cat jumped"] -> (dog, [0]), (jumped, [0]), (the, [0]), ; (cat, [1]), (jumped, [1]), (the, [1]) -> (cat, [1]), (dog, [0]), (jumped, [0, 1]), (the, [0, 1]
 
-# In[67]:
+# In[2]:
 
 # SPIMI: Create one postings list per block of documents.
 from collections import defaultdict
@@ -170,7 +169,7 @@ for block_id, block in enumerate(blocks):
 # Then, merge blocks in linear time.
 
 
-# Out[67]:
+# Out[2]:
 
 #     Block 0 ['cat [1]', 'dog [0]', 'jumped [0, 1]', 'the [0, 1]']
 #     
@@ -194,6 +193,7 @@ for block_id, block in enumerate(blocks):
 # # MapReduce
 # 
 # - What if we had 100K servers?
+
 # - **MapReduce:**
 #   - A distributed programming framework
 #   - Breaks large data into smaller data, called **splits**
@@ -255,7 +255,7 @@ for block_id, block in enumerate(blocks):
 # 
 # ...
 
-# In[76]:
+# In[3]:
 
 import re
 from mrjob.job import MRJob  # install with `pip install mrjob`
