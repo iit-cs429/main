@@ -53,7 +53,7 @@
 # 
 # $V = f(T)$
 
-# In[240]:
+# In[331]:
 
 # Let's read in some documents.
 # This is a dataset of 11K newsgroups posts: http://qwone.com/~jason/20Newsgroups/
@@ -62,18 +62,18 @@ docs = fetch_20newsgroups(subset='train', remove=('headers', 'footers', 'quotes'
 print 'read %d docs' % len(docs)
 
 
-# Out[240]:
+# Out[331]:
 
 #     read 11314 docs
 # 
 
-# In[241]:
+# In[332]:
 
 # Let's look at a couple documents.
 print docs[0]
 
 
-# Out[241]:
+# Out[332]:
 
 #     I was wondering if anyone out there could enlighten me on this car I saw
 #     the other day. It was a 2-door sports car, looked to be from the late 60s/
@@ -84,12 +84,12 @@ print docs[0]
 #     have on this funky looking car, please e-mail.
 # 
 
-# In[242]:
+# In[333]:
 
 print docs[100]
 
 
-# Out[242]:
+# Out[333]:
 
 #     1.  Software publishing SuperBase 4 windows v.1.3           --->$80
 #     
@@ -130,36 +130,45 @@ print docs[100]
 #     17.  TimeSlip TimeSheet Professional for Windows            --->$30
 # 
 
-# In[243]:
+# ### Next, let's count the number of terms and tokens in this dataset.
+
+# In[334]:
 
 from collections import defaultdict
 import re
 
 # Count the number of terms and tokens in a list of documents.
+# return
+#  1. terms: a dict from term to number of documents it appears in
+#  2. n_tokens: the number of tokens in docs
 def count_terms_and_toks(docs):
     terms = defaultdict(lambda: 0)  # Map from term to count.
     n_tokens = 0
     for d in docs:
+        d_terms = set()  # increment each term once per document.
         for tok in re.findall('[\w]+',d.lower()):
-            terms[tok] += 1
+            d_terms.add(tok)
             n_tokens += 1
+        for d_term in d_terms:
+            terms[d_term] += 1
+
     return terms, n_tokens
 
 
-# In[244]:
+# In[335]:
 
 terms, n_tokens = count_terms_and_toks(docs)
 print 'found %d tokens and %d terms' % (n_tokens, len(terms))
 
 
-# Out[244]:
+# Out[335]:
 
 #     found 2407154 tokens and 101660 terms
 # 
 
 # How does the number of terms vary with the number of tokens?
 
-# In[245]:
+# In[336]:
 
 # Compute T/V for different subsets of the documents.
 T = []
@@ -171,7 +180,7 @@ for n_docs in [10, 100, 200, 500, 1000, 2000, 3000, 4000, 5000, 10000]:
     V.append(len(terms))
 
 
-# Out[245]:
+# Out[336]:
 
 #     found 1270 tokens and 545 terms in 10 docs
 #     found 20449 tokens and 4941 terms in 100 docs
@@ -185,7 +194,7 @@ for n_docs in [10, 100, 200, 500, 1000, 2000, 3000, 4000, 5000, 10000]:
 #     found 2155062 tokens and 92689 terms in 10000 docs
 # 
 
-# In[246]:
+# In[337]:
 
 # Let's plot the results.
 get_ipython().magic(u'pylab inline')
@@ -194,18 +203,18 @@ ylabel('V')
 plot(T, V, 'bo')
 
 
-# Out[246]:
+# Out[337]:
 
 #     Populating the interactive namespace from numpy and matplotlib
 # 
 
-#     [<matplotlib.lines.Line2D at 0x10fca4350>]
+#     [<matplotlib.lines.Line2D at 0x109c2c6d0>]
 
 # image file:
 
 # Is this linear, polynomial, something else?
 
-# In[247]:
+# In[338]:
 
 # Let's try a linear fit
 import numpy as np
@@ -216,12 +225,12 @@ plot(T, np.polyval(linear, T), 'r-', label='linear')  # r- = red solid line
 legend(loc='best')
 
 
-# Out[247]:
+# Out[338]:
 
 #     linear fit=0.04*x + 11949.85
 # 
 
-#     <matplotlib.legend.Legend at 0x10c10ca50>
+#     <matplotlib.legend.Legend at 0x10affae90>
 
 # image file:
 
@@ -233,7 +242,7 @@ legend(loc='best')
 # 
 # for constants $k$ (typically $30 < k < 100$) and $b$ (typically $b \approx 0.5$)
 
-# In[248]:
+# In[339]:
 
 # How do we set k and b in Heaps' Law?
 # Minimize mean squared error.
@@ -241,7 +250,7 @@ from scipy.optimize import curve_fit
 help(curve_fit)
 
 
-# Out[248]:
+# Out[339]:
 
 #     Help on function curve_fit in module scipy.optimize.minpack:
 #     
@@ -304,26 +313,26 @@ help(curve_fit)
 #     
 # 
 
-# In[249]:
+# In[340]:
 
 # V = k * T^b
 def heaps(T, k, b):
     return k*(T**b)
 
 
-# In[250]:
+# In[341]:
 
 # Fit k and b
 heap_parms,covar = curve_fit(heaps, T, V)
 print 'Heaps fit is %.2f*T^%.2f' % (heap_parms[0], heap_parms[1])
 
 
-# Out[250]:
+# Out[341]:
 
 #     Heaps fit is 23.49*T^0.57
 # 
 
-# In[251]:
+# In[342]:
 
 # Compare linear fit and Heaps fit
 plot(T, V, 'bo', label='data')
@@ -334,18 +343,18 @@ ylabel('V')
 legend(loc='best')
 
 
-# Out[251]:
+# Out[342]:
 
-#     <matplotlib.legend.Legend at 0x10c1aa8d0>
+#     <matplotlib.legend.Legend at 0x10c278d10>
 
 # image file:
 
-# In[252]:
+# In[343]:
 
 print 'Heaps predicts %d terms for %d tokens, truth is %d.' % (heaps(T[-1], *heap_parms), T[-1], V[-1])
 
 
-# Out[252]:
+# Out[343]:
 
 #     Heaps predicts 92835 terms for 2155062 tokens, truth is 92689.
 # 
@@ -354,31 +363,31 @@ print 'Heaps predicts %d terms for %d tokens, truth is %d.' % (heaps(T[-1], *hea
 # 
 # - How many times does the most frequent term occur? The $i$th most frequent term?
 
-# In[253]:
+# In[344]:
 
 # Let's plot and see.
-# Recall that terms is a dict from term to frequency
-print terms.items()[:5]
+# Recall that terms is a dict from term to document frequency
+print '"the" occurs in %d documents; "zebra" occurs in %d documents' % (terms['the'], terms['honda'])
 
 
-# Out[253]:
+# Out[344]:
 
-#     [(u'3ds2scn', 1), (u'l1tbk', 1), (u'porkification', 1), (u'mbhi8bea', 1), (u'woods', 15)]
+#     "the" occurs in 8373 documents; "zebra" occurs in 61 documents
 # 
 
-# In[254]:
+# In[345]:
 
 # Sort frequency values in descending order
 freqs = sorted(terms.values(), reverse=True)
 print 'top 10 frequencies are', freqs[:10]
 
 
-# Out[254]:
+# Out[345]:
 
-#     top 10 frequencies are [95622, 62381, 47659, 41940, 40610, 38542, 32494, 27802, 26975, 25011]
+#     top 10 frequencies are [8373, 7479, 7396, 6912, 6870, 6781, 6287, 6206, 5884, 5814]
 # 
 
-# In[255]:
+# In[346]:
 
 ranks = range(1, len(freqs)+1)
 plot(ranks, freqs, 'bo', label='data')
@@ -387,23 +396,23 @@ xlabel('rank')
 ylabel('frequency')
 
 
-# Out[255]:
+# Out[346]:
 
-#     <matplotlib.text.Text at 0x10b117990>
+#     <matplotlib.text.Text at 0x10bacedd0>
 
 # image file:
 
-# In[261]:
+# In[347]:
 
-print '%d/%d terms occur once.' % (len([x for x in freqs if x == 1]), len(freqs))
+print '%d/%d terms occur in only one document.' % (len([x for x in freqs if x == 1]), len(freqs))
 
 
-# Out[261]:
+# Out[347]:
 
-#     50114/92689 terms occur once.
+#     56258/92689 terms occur in only one document.
 # 
 
-# In[259]:
+# In[348]:
 
 # That was ugly. The values decrease too rapidly. Let's try a log-log plot.
 l_ranks = np.log10(ranks)
@@ -414,9 +423,9 @@ xlabel('log(rank)')
 ylabel('log(frequency)')
 
 
-# Out[259]:
+# Out[348]:
 
-#     <matplotlib.text.Text at 0x1098b9a10>
+#     <matplotlib.text.Text at 0x10bab6810>
 
 # image file:
 
@@ -434,7 +443,7 @@ ylabel('log(frequency)')
 # 
 # (c.f. Heap's law: $V = kT^b$)
 
-# In[257]:
+# In[349]:
 
 # Define the Zipf function and fit the k parameter.
 def zipfs(i, k):
@@ -443,12 +452,12 @@ zipf_parms,covar = curve_fit(zipfs, ranks, freqs)
 print 'Zipf fit is %.2f*T^-1' % zipf_parms[0]
 
 
-# Out[257]:
+# Out[349]:
 
-#     Zipf fit is 123419.09*T^-1
+#     Zipf fit is 18138.34*T^-1
 # 
 
-# In[258]:
+# In[350]:
 
 plot(l_ranks, l_freqs, 'bo', label='data')
 xlabel('log(rank)')
@@ -457,39 +466,25 @@ plot(l_ranks, log10(zipfs(ranks, *zipf_parms)), 'k--', label='zipf')  # k-- = bl
 legend(loc='best')
 
 
-# Out[258]:
+# Out[350]:
 
-#     <matplotlib.legend.Legend at 0x10b122ed0>
+#     <matplotlib.legend.Legend at 0x1086afa90>
 
 # image file:
 
-# In[263]:
-
-vocab = sorted(terms.keys())
-print vocab[:10]
-
-
-# Out[263]:
-
-#     [u'0', u'00', u'000', u'0000', u'00000', u'000000', u'00000000', u'0000000004', u'00000000b', u'00000001']
-# 
-
-# In[270]:
-
-from sys import getsizeof
-getsizeof(1)
-
-
-# Out[270]:
-
-#     24
-
 # # Dictionary compression
 # 
-# - Fixed-width storage
-# - One big string
-# - Blocked storage
-# - Front encoding
+# 
+# $ \begin{eqnarray*}
+# \mathbf{dog} & \rightarrow & [1, 6, 20] \\
+# \mathbf{cat} & \rightarrow & [7, 16, 32] \\
+# \end{eqnarray*}
+# $
+# 
+# 1. Fixed-width storage
+# 2. One big string
+# 3. Blocked storage
+# 4. Front encoding
 
 # # Fixed-width storage
 # 
@@ -536,7 +531,7 @@ getsizeof(1)
 # 
 # Savings depends on chosen prefixes.
 
-# # Compression Results
+# # Dictionary compression results
 # 
 # ![sizes](files/sizes.png)
 # 
@@ -544,7 +539,100 @@ getsizeof(1)
 # 
 # Note that 28V / 19V $\approx$ 11.2 / 7.6
 
-# In[ ]:
+# # Compression postings lists
+# 
+# $ \begin{eqnarray*}
+# dog & \rightarrow & \mathbf{[1, 6, 20]} \\
+# cat & \rightarrow & \mathbf{[7, 16, 32]} \\
+# \end{eqnarray*}
+# $
 
+# How many bits to represent a doc ID?
 
+# $log_2(D)$ for $D$ documents in dataset.
+# 
+# So, postings list for a term that appears in $n$ documents requires $n log_2(D)$ bits.
 
+# # Storing gaps
+# 
+# **Idea:** Store only gaps between doc IDs. Hope that the range of gaps is less than the number of documents. E.g.
+# 
+# $ dog \rightarrow [101, 102, 104, 107] $
+# 
+# becomes
+# 
+# $ dog \rightarrow [101, 1, 2, 3] $
+# 
+
+# Instead of $log_2(D)$, each ID is stored in $log_2(M)$, where $M$ is maximum gap.
+
+# What about rare words?
+
+# $ defenestrate \rightarrow [100, 99999100] $
+# 
+# becomes
+# 
+# $ defenestrate \rightarrow [100, 99999000] $
+# 
+
+# # Variable byte encoding
+# 
+# **Idea:** Use more bytes for larger numbers. 
+# 
+# E.g., 
+# 
+# - doc ID $4 \rightarrow 100$ (4 bits)
+# - doc ID $4000 \rightarrow 111110100000$ (12 bits)
+# 
+# What's the problem with this?
+
+# 4 followed by 400 becomes: $100111110100000$ 
+# 
+# Where does one ID end and the next begin?
+
+# **Idea:**
+# 
+# - For each byte, let the final 7 bits be a subsequence of an ID;
+# - Let the first bit be 1 if this is the final byte for this ID
+
+# $4 \rightarrow $ <font color='blue'><u>**1**</u>0000100</font> (<font color='blue'><u>1</u></font> = final byte, <font color='blue'>0000100</font> = ID 4)
+# 
+# $4000 \rightarrow$ <font color='blue'><u>**0**</u>0011111</font><font color="orange"><u>**1**</u>0100000</font> $\rightarrow$ <font color='blue'><u>**_**</u>0011111</font><font color="orange"><u>**_**</u>0100000</font> $\rightarrow$ 00111110100000
+# 
+# 
+
+# ![vb](files/vb.png)
+# 
+# [MRS](http://nlp.stanford.edu/IR-book/pdf/05comp.pdf)
+# 
+
+# ![sizes2](files/sizes2.png)
+# 
+# [MRS](http://nlp.stanford.edu/IR-book/pdf/05comp.pdf)
+# 
+
+# # How many bytes to store $n$ postings lists?
+# 
+# Need to know how many doc ids in each postings list.
+# 
+# Recall Zipf:
+# 
+# $ f_i = \frac{k}{i} $ for constant $k$
+# 
+# so, most frequent term has $k$ doc ids, next most frequent has $\frac{k}{2}$, next has $\frac{k}{3}$, etc.
+# 
+# Have to make some assumption about gap sizes: e.g., uniform $ [100, 200, 300, 400, ...] $
+# 
+# $\begin{eqnarray*}
+# term_1 & = & [\frac{D}{k}, 2\frac{D}{k}, 3\frac{D}{k}, \ldots, k\frac{D}{k}]\\
+# term_2 & = & [\frac{2D}{k}, 2\frac{2D}{k}, 3\frac{2D}{k}, \ldots, k\frac{2D}{k}]\\
+# \vdots\\
+# term_i & = & [\frac{iD}{k}, 2\frac{iD}{k}, 3\frac{iD}{k}, \ldots, k\frac{iD}{k}]\\
+# \end{eqnarray*}
+# $
+# 
+
+# In terms of $D$, $k$, what is
+# 
+# - average gap size?
+# - total number of gaps?
