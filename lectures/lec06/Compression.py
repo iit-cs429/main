@@ -3,7 +3,7 @@
 # 
 # <br>
 # 
-# ## Lecture 5: Index Compression
+# ## Lecture 6: Index Compression
 # 
 # <br>
 # 
