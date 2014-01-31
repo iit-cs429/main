@@ -53,7 +53,7 @@
 # 
 # $V = f(T)$
 
-# In[331]:
+# In[351]:
 
 # Let's read in some documents.
 # This is a dataset of 11K newsgroups posts: http://qwone.com/~jason/20Newsgroups/
@@ -62,18 +62,18 @@ docs = fetch_20newsgroups(subset='train', remove=('headers', 'footers', 'quotes'
 print 'read %d docs' % len(docs)
 
 
-# Out[331]:
+# Out[351]:
 
 #     read 11314 docs
 # 
 
-# In[332]:
+# In[352]:
 
 # Let's look at a couple documents.
 print docs[0]
 
 
-# Out[332]:
+# Out[352]:
 
 #     I was wondering if anyone out there could enlighten me on this car I saw
 #     the other day. It was a 2-door sports car, looked to be from the late 60s/
@@ -84,12 +84,12 @@ print docs[0]
 #     have on this funky looking car, please e-mail.
 # 
 
-# In[333]:
+# In[353]:
 
 print docs[100]
 
 
-# Out[333]:
+# Out[353]:
 
 #     1.  Software publishing SuperBase 4 windows v.1.3           --->$80
 #     
@@ -132,7 +132,7 @@ print docs[100]
 
 # ### Next, let's count the number of terms and tokens in this dataset.
 
-# In[334]:
+# In[ ]:
 
 from collections import defaultdict
 import re
@@ -155,20 +155,20 @@ def count_terms_and_toks(docs):
     return terms, n_tokens
 
 
-# In[335]:
+# In[354]:
 
 terms, n_tokens = count_terms_and_toks(docs)
 print 'found %d tokens and %d terms' % (n_tokens, len(terms))
 
 
-# Out[335]:
+# Out[354]:
 
 #     found 2407154 tokens and 101660 terms
 # 
 
 # How does the number of terms vary with the number of tokens?
 
-# In[336]:
+# In[355]:
 
 # Compute T/V for different subsets of the documents.
 T = []
@@ -180,7 +180,7 @@ for n_docs in [10, 100, 200, 500, 1000, 2000, 3000, 4000, 5000, 10000]:
     V.append(len(terms))
 
 
-# Out[336]:
+# Out[355]:
 
 #     found 1270 tokens and 545 terms in 10 docs
 #     found 20449 tokens and 4941 terms in 100 docs
@@ -194,7 +194,7 @@ for n_docs in [10, 100, 200, 500, 1000, 2000, 3000, 4000, 5000, 10000]:
 #     found 2155062 tokens and 92689 terms in 10000 docs
 # 
 
-# In[337]:
+# In[356]:
 
 # Let's plot the results.
 get_ipython().magic(u'pylab inline')
@@ -203,18 +203,18 @@ ylabel('V')
 plot(T, V, 'bo')
 
 
-# Out[337]:
+# Out[356]:
 
 #     Populating the interactive namespace from numpy and matplotlib
 # 
 
-#     [<matplotlib.lines.Line2D at 0x109c2c6d0>]
+#     [<matplotlib.lines.Line2D at 0x109c5ea90>]
 
 # image file:
 
 # Is this linear, polynomial, something else?
 
-# In[338]:
+# In[357]:
 
 # Let's try a linear fit
 import numpy as np
@@ -225,12 +225,12 @@ plot(T, np.polyval(linear, T), 'r-', label='linear')  # r- = red solid line
 legend(loc='best')
 
 
-# Out[338]:
+# Out[357]:
 
 #     linear fit=0.04*x + 11949.85
 # 
 
-#     <matplotlib.legend.Legend at 0x10affae90>
+#     <matplotlib.legend.Legend at 0x10ab19f90>
 
 # image file:
 
@@ -242,7 +242,7 @@ legend(loc='best')
 # 
 # for constants $k$ (typically $30 < k < 100$) and $b$ (typically $b \approx 0.5$)
 
-# In[339]:
+# In[358]:
 
 # How do we set k and b in Heaps' Law?
 # Minimize mean squared error.
@@ -250,7 +250,7 @@ from scipy.optimize import curve_fit
 help(curve_fit)
 
 
-# Out[339]:
+# Out[358]:
 
 #     Help on function curve_fit in module scipy.optimize.minpack:
 #     
@@ -313,26 +313,26 @@ help(curve_fit)
 #     
 # 
 
-# In[340]:
+# In[359]:
 
 # V = k * T^b
 def heaps(T, k, b):
     return k*(T**b)
 
 
-# In[341]:
+# In[360]:
 
 # Fit k and b
 heap_parms,covar = curve_fit(heaps, T, V)
 print 'Heaps fit is %.2f*T^%.2f' % (heap_parms[0], heap_parms[1])
 
 
-# Out[341]:
+# Out[360]:
 
 #     Heaps fit is 23.49*T^0.57
 # 
 
-# In[342]:
+# In[361]:
 
 # Compare linear fit and Heaps fit
 plot(T, V, 'bo', label='data')
@@ -343,18 +343,18 @@ ylabel('V')
 legend(loc='best')
 
 
-# Out[342]:
+# Out[361]:
 
-#     <matplotlib.legend.Legend at 0x10c278d10>
+#     <matplotlib.legend.Legend at 0x109ab1e10>
 
 # image file:
 
-# In[343]:
+# In[362]:
 
 print 'Heaps predicts %d terms for %d tokens, truth is %d.' % (heaps(T[-1], *heap_parms), T[-1], V[-1])
 
 
-# Out[343]:
+# Out[362]:
 
 #     Heaps predicts 92835 terms for 2155062 tokens, truth is 92689.
 # 
@@ -363,31 +363,31 @@ print 'Heaps predicts %d terms for %d tokens, truth is %d.' % (heaps(T[-1], *hea
 # 
 # - How many times does the most frequent term occur? The $i$th most frequent term?
 
-# In[344]:
+# In[364]:
 
 # Let's plot and see.
 # Recall that terms is a dict from term to document frequency
-print '"the" occurs in %d documents; "zebra" occurs in %d documents' % (terms['the'], terms['honda'])
+print '"the" occurs in %d documents; "honda" occurs in %d documents' % (terms['the'], terms['honda'])
 
 
-# Out[344]:
+# Out[364]:
 
-#     "the" occurs in 8373 documents; "zebra" occurs in 61 documents
+#     "the" occurs in 8373 documents; "honda" occurs in 61 documents
 # 
 
-# In[345]:
+# In[365]:
 
 # Sort frequency values in descending order
 freqs = sorted(terms.values(), reverse=True)
 print 'top 10 frequencies are', freqs[:10]
 
 
-# Out[345]:
+# Out[365]:
 
 #     top 10 frequencies are [8373, 7479, 7396, 6912, 6870, 6781, 6287, 6206, 5884, 5814]
 # 
 
-# In[346]:
+# In[366]:
 
 ranks = range(1, len(freqs)+1)
 plot(ranks, freqs, 'bo', label='data')
@@ -396,23 +396,23 @@ xlabel('rank')
 ylabel('frequency')
 
 
-# Out[346]:
+# Out[366]:
 
-#     <matplotlib.text.Text at 0x10bacedd0>
+#     <matplotlib.text.Text at 0x10a9e5ed0>
 
 # image file:
 
-# In[347]:
+# In[367]:
 
 print '%d/%d terms occur in only one document.' % (len([x for x in freqs if x == 1]), len(freqs))
 
 
-# Out[347]:
+# Out[367]:
 
 #     56258/92689 terms occur in only one document.
 # 
 
-# In[348]:
+# In[368]:
 
 # That was ugly. The values decrease too rapidly. Let's try a log-log plot.
 l_ranks = np.log10(ranks)
@@ -423,9 +423,9 @@ xlabel('log(rank)')
 ylabel('log(frequency)')
 
 
-# Out[348]:
+# Out[368]:
 
-#     <matplotlib.text.Text at 0x10bab6810>
+#     <matplotlib.text.Text at 0x10aa11b90>
 
 # image file:
 
@@ -443,7 +443,7 @@ ylabel('log(frequency)')
 # 
 # (c.f. Heap's law: $V = kT^b$)
 
-# In[349]:
+# In[369]:
 
 # Define the Zipf function and fit the k parameter.
 def zipfs(i, k):
@@ -452,12 +452,12 @@ zipf_parms,covar = curve_fit(zipfs, ranks, freqs)
 print 'Zipf fit is %.2f*T^-1' % zipf_parms[0]
 
 
-# Out[349]:
+# Out[369]:
 
 #     Zipf fit is 18138.34*T^-1
 # 
 
-# In[350]:
+# In[370]:
 
 plot(l_ranks, l_freqs, 'bo', label='data')
 xlabel('log(rank)')
@@ -466,9 +466,9 @@ plot(l_ranks, log10(zipfs(ranks, *zipf_parms)), 'k--', label='zipf')  # k-- = bl
 legend(loc='best')
 
 
-# Out[350]:
+# Out[370]:
 
-#     <matplotlib.legend.Legend at 0x1086afa90>
+#     <matplotlib.legend.Legend at 0x108dc2b90>
 
 # image file:
 
@@ -581,7 +581,7 @@ legend(loc='best')
 # 
 # E.g., 
 # 
-# - doc ID $4 \rightarrow 100$ (4 bits)
+# - doc ID $4 \rightarrow 100$ (3 bits)
 # - doc ID $4000 \rightarrow 111110100000$ (12 bits)
 # 
 # What's the problem with this?
