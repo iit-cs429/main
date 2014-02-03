@@ -6,7 +6,7 @@
 | 1/21  | Indexing II: phrases, skip lists, position | [Ch2](http://nlp.stanford.edu/IR-book/pdf/02voc.pdf)   | | [L03](../lectures/lec03)
 | 1/23  | Dictionaries                     | [Ch3](http://nlp.stanford.edu/IR-book/pdf/03dict.pdf)  | [A0](../assignments/assignment0) | [L04](../lectures/lec04)
 | 1/28  | Scalable indexing             | [Ch4](http://nlp.stanford.edu/IR-book/pdf/04const.pdf) | | [L05](../lectures/lec05)
-| 1/30  | Index compression                | [Ch5](http://nlp.stanford.edu/IR-book/pdf/05comp.pdf)  |
+| 1/30  | Index compression                | [Ch5](http://nlp.stanford.edu/IR-book/pdf/05comp.pdf)  | |  [L06](../lectures/lec06)
 || **Part II: Ranking**  |
 | 2/04  | Vector space model               | [Ch6](http://nlp.stanford.edu/IR-book/pdf/06vect.pdf)  |
 | 2/06  | Scoring for search               |[Ch7](http://nlp.stanford.edu/IR-book/pdf/07systeml.pdf)| [A1](../assignments/assignment1)
