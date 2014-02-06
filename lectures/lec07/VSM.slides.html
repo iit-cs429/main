@@ -1766,7 +1766,7 @@ text-align: inherit;
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[1]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">def</span> <span class="nf">intersect</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="n">list2</span><span class="p">):</span>
@@ -1853,7 +1853,7 @@ In&nbsp;[]:
     <section>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="ranked-retrieval">Ranked retrieval</h1>
-<p><strong>Problem:</strong> Given a query <span class="math">\(q\)</span> and a set documents <span class="math">\(D\)</span>, compute a score <span class="math">\(s_i \in [0, 1]\)</span> for each document <span class="math">\(d_i \in D\)</span>.</p>
+<p><strong>Problem:</strong> Given a query <span class="math">\(q\)</span> and a set of documents <span class="math">\(D\)</span>, compute a score <span class="math">\(s_i \in [0, 1]\)</span> for each document <span class="math">\(d_i \in D\)</span>.</p>
 <ul>
 <li>higher scores <span class="math">\(\rightarrow d_i\)</span> is more relevant to <span class="math">\(q\)</span>.</li>
 </ul>
@@ -1928,7 +1928,7 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[22]:
+In&nbsp;[2]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="o">%</span><span class="k">pylab</span> <span class="n">inline</span>
@@ -1955,12 +1955,12 @@ Populating the interactive namespace from numpy and matplotlib
 </div>
 
 <div class="hbox output_area"><div class="prompt output_prompt">
-    Out[22]:</div>
+    Out[2]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
 
 <pre>
-[&lt;matplotlib.lines.Line2D at 0x110d4ead0&gt;]
+[&lt;matplotlib.lines.Line2D at 0x10c2d52d0&gt;]
 </pre>
 
 </div>
@@ -2070,7 +2070,7 @@ SZIkSZIkScqe/we1AjyfXvDLjQAAAABJRU5ErkJggg==
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[17]:
+In&nbsp;[3]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="o">%</span><span class="k">pylab</span> <span class="n">inline</span>
@@ -2098,12 +2098,12 @@ Populating the interactive namespace from numpy and matplotlib
 </div>
 
 <div class="hbox output_area"><div class="prompt output_prompt">
-    Out[17]:</div>
+    Out[3]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
 
 <pre>
-[&lt;matplotlib.lines.Line2D at 0x110a91e50&gt;]
+[&lt;matplotlib.lines.Line2D at 0x10c37a410&gt;]
 </pre>
 
 </div>
@@ -2204,7 +2204,7 @@ dz+1l8tFyCxJkiRJkiRJkiRJkiRJkiRJkiTV+j8RLIqyiN+lewAAAABJRU5ErkJggg==
 <h1 id="tf-idf-weight">tf-idf weight</h1>
 <ul>
 <li><p>Multiply <span class="math">\(tf\)</span> and <span class="math">\(idf\)</span></p></li>
-<li><p><span class="math">\(w_{t,d} = \log(1 + tf_{t,d}) \times \log (\frac{N}{df_t})\)</span></p></li>
+<li><p><span class="math">\(w_{t,d} = (1 + \log tf_{t,d}) \times \log (\frac{N}{df_t})\)</span></p></li>
 <li>Perhaps the most common baseline weighting system in IR</li>
 <li><p>Increases with term frequency in document; increases with rarity of term</p></li>
 </ul>
@@ -2237,7 +2237,7 @@ dz+1l8tFyCxJkiRJkiRJkiRJkiRJkiRJkiTV+j8RLIqyiN+lewAAAABJRU5ErkJggg==
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[26]:
+In&nbsp;[4]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">plot</span><span class="p">([</span><span class="mf">10.6</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">],</span> <span class="p">[</span><span class="o">.</span><span class="mi">5</span><span class="p">,</span> <span class="mf">5.6</span><span class="p">],</span> <span class="s">&#39;bo&#39;</span><span class="p">)</span>
@@ -2253,12 +2253,12 @@ In&nbsp;[26]:
 
 
 <div class="hbox output_area"><div class="prompt output_prompt">
-    Out[26]:</div>
+    Out[4]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
 
 <pre>
-&lt;matplotlib.text.Text at 0x110f5e210&gt;
+&lt;matplotlib.text.Text at 0x10c37f650&gt;
 </pre>
 
 </div>

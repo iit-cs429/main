@@ -27,7 +27,7 @@
 # 
 # - Why is this inefficient?  
 
-# In[ ]:
+# In[1]:
 
 def intersect(list1, list2):
     list(set(list1) & set(list2))
@@ -72,7 +72,7 @@ def intersect(list1, list2):
 
 # # Ranked retrieval
 # 
-# **Problem:** Given a query $q$ and a set documents $D$, compute a score $s_i \in [0, 1]$ for each document $d_i \in D$.
+# **Problem:** Given a query $q$ and a set of documents $D$, compute a score $s_i \in [0, 1]$ for each document $d_i \in D$.
 # 
 # - higher scores $\rightarrow d_i$ is more relevant to $q$.
 # 
@@ -126,7 +126,7 @@ def intersect(list1, list2):
 # - If no query terms present? 0 score.
 # 
 
-# In[22]:
+# In[2]:
 
 get_ipython().magic(u'pylab inline')
 tfs = [1, 100, 1000, 10000, 100000, 1000000]
@@ -135,12 +135,12 @@ ylim((-1, 9))
 plot(tfs, [1 + math.log10(tf) for tf in tfs], 'bo')
 
 
-# Out[22]:
+# Out[2]:
 
 #     Populating the interactive namespace from numpy and matplotlib
 # 
 
-#     [<matplotlib.lines.Line2D at 0x110d4ead0>]
+#     [<matplotlib.lines.Line2D at 0x10c2d52d0>]
 
 # image file:
 
@@ -153,7 +153,7 @@ plot(tfs, [1 + math.log10(tf) for tf in tfs], 'bo')
 #   - Let $df_t$ be the total number of documents that term $t$ appears in.
 #   - Define **inverse document freqency** as $idf_t = \log (\frac{N}{df_t})$
 
-# In[17]:
+# In[3]:
 
 get_ipython().magic(u'pylab inline')
 N = 1e6
@@ -163,12 +163,12 @@ ylim((-1, 9))
 plot(dfs, [math.log10(1. * N/df) for df in dfs], 'bo')
 
 
-# Out[17]:
+# Out[3]:
 
 #     Populating the interactive namespace from numpy and matplotlib
 # 
 
-#     [<matplotlib.lines.Line2D at 0x110a91e50>]
+#     [<matplotlib.lines.Line2D at 0x10c37a410>]
 
 # image file:
 
@@ -181,7 +181,7 @@ plot(dfs, [math.log10(1. * N/df) for df in dfs], 'bo')
 # - Multiply $tf$ and $idf$
 # 
 # 
-# - $w_{t,d} = \log(1 + tf_{t,d}) \times \log (\frac{N}{df_t})$
+# - $w_{t,d} = (1 + \log tf_{t,d}) \times \log (\frac{N}{df_t})$
 # 
 # - Perhaps the most common baseline weighting system in IR
 # - Increases with term frequency in document; increases with rarity of term
@@ -207,16 +207,16 @@ plot(dfs, [math.log10(1. * N/df) for df in dfs], 'bo')
 #   - $d_1 = \{10.6, 0.5\}$ (mostly about dogs)
 #   - $d_2 = \{0.2, 5.6\}$  (mostly about cats)
 
-# In[26]:
+# In[4]:
 
 plot([10.6, 0.2], [.5, 5.6], 'bo')
 xlabel('dog')
 ylabel('cat')
 
 
-# Out[26]:
+# Out[4]:
 
-#     <matplotlib.text.Text at 0x110f5e210>
+#     <matplotlib.text.Text at 0x10c37f650>
 
 # image file:
 
