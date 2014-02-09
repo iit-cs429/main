@@ -9,7 +9,7 @@
 | 1/30  | Index compression                | [Ch5](http://nlp.stanford.edu/IR-book/pdf/05comp.pdf)  | |  [L06](../lectures/lec06)
 || **Part II: Ranking**  |
 | 2/04  | Vector space model               | [Ch6](http://nlp.stanford.edu/IR-book/pdf/06vect.pdf)  | |  [L07](../lectures/lec07)
-| 2/06  | Scoring for search               |[Ch7](http://nlp.stanford.edu/IR-book/pdf/07system.pdf)| |  [L08](../lectures/lec08) | [A1](../assignments/assignment1) 
+| 2/06  | Scoring for search               |[Ch7](http://nlp.stanford.edu/IR-book/pdf/07system.pdf)| [A1](../assignments/assignment1) |  [L08](../lectures/lec08) | [A1](../assignments/assignment1) 
 | 2/11  | Evaluation                       | [Ch8](http://nlp.stanford.edu/IR-book/pdf/08eval.pdf)  |
 | 2/13  | Query Expansion                  | [Ch9](http://nlp.stanford.edu/IR-book/pdf/09expand.pdf)|
 | 2/18  | Probabilistic IR                 | [Ch11](http://nlp.stanford.edu/IR-book/pdf/11prob.pdf) |
