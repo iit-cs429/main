@@ -19,7 +19,7 @@
 # 
 # Today
 # 
-# - Is our search engine is any good?
+# - Is our search engine any good?
 
 # # Evaluation
 # 
