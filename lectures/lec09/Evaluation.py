@@ -148,6 +148,7 @@
 # 
 # - Assume search engine returns $K$ results
 # 
+# 
 # <table>
 # <tr> <td>                   </td>  <td> **Relevant**  </td>  <td> **Nonrelevant** </td> </tr>
 # <tr> <td> **Retrieved**     </td>  <td> true pos (**tp**)      </td>  <td> false pos (**fp**)   </td> </tr>
@@ -155,6 +156,8 @@
 # </table>
 
 # Example:
+# 
+# 
 # ```
 # Rank    DocID    Relevant
 # ----    -----    --------
