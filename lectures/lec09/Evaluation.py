@@ -124,7 +124,7 @@
 # - Chance that they both say not relevant at the same time? $40\% \times 30\% = 12\%$.
 # 
 # 
-# - Chance that they say agree on any document (both say yes or both say no): $42\% + 12\% = 54\%$
+# - Chance that they agree on any document (both say yes or both say no): $42\% + 12\% = 54\%$
 # 
 # 
 
@@ -228,7 +228,7 @@
 
 # $P = \frac{tp}{tp + fp} = \frac{0}{0} = NaN \rightarrow 0\%$
 # 
-# $R = \frac{tp}{tp + fn} = \frac{0}{5} = 0\%$
+# $R = \frac{tp}{tp + fn} = \frac{0}{10} = 0\%$
 
 # How to combine precision and recall?
 # 
@@ -477,7 +477,9 @@ ylim((0, 1.1))
 # 
 # Let $r_L(i, j)$ be 1 if ranking $L$ ranks $i$ before $j$.
 # 
-# **Kendall tau distance** is the number of pairwise disagreements: $\tau(L, L^*) = {\Big|}{\big \{}(i,j) $ s.t. $r_L(i, j) \ne r_{L^*}(i, j){\big \}}{\Big|}$
+# **Kendall tau distance** is the number of pairwise disagreements: 
+# 
+# $\tau(L, L^*) = {\Big|}{\big \{}(i,j) $ s.t. $r_L(i, j) \ne r_{L^*}(i, j){\big \}}{\Big|}$
 # 
 # If perfectly matched: $\tau=0$; if perfectly mismatched: $\tau=\Big| L^* \Big|$
 

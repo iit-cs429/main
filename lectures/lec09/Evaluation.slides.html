@@ -1959,7 +1959,7 @@ Not Relevant
 <li>Person 1 says Not Relevant <span class="math">\(40\%\)</span> of the time.</li>
 <li>Person 2 says Not Relevant <span class="math">\(30\%\)</span> of the time.</li>
 <li><p>Chance that they both say not relevant at the same time? <span class="math">\(40\% \times 30\% = 12\%\)</span>.</p></li>
-<li><p>Chance that they say agree on any document (both say yes or both say no): <span class="math">\(42\% + 12\% = 54\%\)</span></p></li>
+<li><p>Chance that they agree on any document (both say yes or both say no): <span class="math">\(42\% + 12\% = 54\%\)</span></p></li>
 </ul>
 </div>
     </div><div class="fragment">
@@ -2186,7 +2186,7 @@ true neg (<strong>tn</strong>)
     
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><span class="math">\(P = \frac{tp}{tp + fp} = \frac{0}{0} = NaN \rightarrow 0\%\)</span></p>
-<p><span class="math">\(R = \frac{tp}{tp + fn} = \frac{0}{5} = 0\%\)</span></p>
+<p><span class="math">\(R = \frac{tp}{tp + fn} = \frac{0}{10} = 0\%\)</span></p>
 </div>
     </div></section>
     </section><section>
@@ -3050,7 +3050,8 @@ AAAASUVORK5CYII=
 <p>Let <span class="math">\(L^*\)</span> be the set of <strong>true</strong> pairwise preferences <span class="math">\(\{d_i &gt; d_j\}\)</span></p>
 <p>Let <span class="math">\(L\)</span> be the ranking produced by our system: <span class="math">\(d_{123} &gt; d_{456} &gt; d_{789} \ldots\)</span></p>
 <p>Let <span class="math">\(r_L(i, j)\)</span> be 1 if ranking <span class="math">\(L\)</span> ranks <span class="math">\(i\)</span> before <span class="math">\(j\)</span>.</p>
-<p><strong>Kendall tau distance</strong> is the number of pairwise disagreements: <span class="math">\(\tau(L, L^*) = {\Big|}{\big \{}(i,j)\)</span> s.t. <span class="math">\(r_L(i, j) \ne r_{L^*}(i, j){\big \}}{\Big|}\)</span></p>
+<p><strong>Kendall tau distance</strong> is the number of pairwise disagreements:</p>
+<p><span class="math">\(\tau(L, L^*) = {\Big|}{\big \{}(i,j)\)</span> s.t. <span class="math">\(r_L(i, j) \ne r_{L^*}(i, j){\big \}}{\Big|}\)</span></p>
 <p>If perfectly matched: <span class="math">\(\tau=0\)</span>; if perfectly mismatched: <span class="math">\(\tau=\Big| L^* \Big|\)</span></p>
 </div>
     </div></section>
