@@ -33,7 +33,7 @@
 # 
 # - **Chain rule**
 # 
-# $P(A, B) \equiv P(A \cap B) = P(A|B)P(B) = P(B|A)P(B)$
+# $P(A, B) \equiv P(A \cap B) = P(A|B)P(B) = P(B|A)P(A)$
 # 
 # 
 # - **Bayes' rule** (application of the chain rule)
