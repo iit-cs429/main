@@ -46,7 +46,7 @@
 # 
 # What is the effect of $k$?
 
-# In[86]:
+# In[89]:
 
 # Plot tf score as k varies.
 
@@ -54,23 +54,22 @@ def tfscore(k, tf):
     return (k+1)*tf / (k+tf)
 
 get_ipython().magic(u'pylab inline')
-tf = 10
 ks = [0., .5, 1., 1.5, 2.0]
-tfs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+tfs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 100]
 for k in ks:
     plot(tfs, [tfscore(k, tf) for tf in tfs], label='k=' + str(k))
 xlabel('tf')
 ylabel('score')
 legend(loc='upper left', bbox_to_anchor=(1,1))
-ylim((0.9,2.6))
+#ylim((0.9,2.6))
 
 
-# Out[86]:
+# Out[89]:
 
 #     Populating the interactive namespace from numpy and matplotlib
 # 
 
-#     (0.9, 2.6)
+#     <matplotlib.legend.Legend at 0x114a89d50>
 
 # image file:
 
@@ -145,7 +144,7 @@ legend(loc='upper left', bbox_to_anchor=(1,1))
 # 
 # **BM25:** "Best Match" 25 system (aka "[Okapi](http://en.wikipedia.org/wiki/Okapi_BM25)")
 
-# In[83]:
+# In[93]:
 
 # How does score vary with tf and document length?
 def score(k, b, tf, length, m_length):
@@ -155,7 +154,7 @@ tfs = [10, 20, 30, 40, 50]
 lengths = [100, 200, 300, 400, 500]
 m_length = 250
 k = 2.0  # tf strength
-b = 0.75  # length normalization strength
+b = 0.1  # length normalization strength
 
 for tf in tfs:
     plot(lengths,
@@ -167,9 +166,9 @@ xlabel('document length')
 ylabel('score')
 
 
-# Out[83]:
+# Out[93]:
 
-#     <matplotlib.text.Text at 0x11477ccd0>
+#     <matplotlib.text.Text at 0x114949690>
 
 # image file:
 
@@ -210,7 +209,29 @@ ylabel('score')
 
 # Could also have different $b$ for each field. Why?
 
-# In[ ]:
-
-
-
+# # Exercise
+# 
+# There are four documents in the world, with the following term frequencies:
+# 
+# - $d_1: $ {dog: 4, cat: 6, the: 10}
+# - $d_2: $ {dog: 2, the: 8}
+# - $d_3: $ {zebra: 20}
+# - $d_4: $ {zebra: 30}
+# 
+# Consider the query **(the dog)**. Let $b=1$ and $k=2$. Fill in the values in this table (showing your work):
+# 
+# <table>
+#   <tr> <td> </td> <td>RSV</td> <td>BM25</td></tr>
+#   <tr> <td> $d_1$ </td> <td> </td> <td> </td></tr>
+#   <tr> <td> $d_2$ </td> <td> </td> <td> </td></tr>
+# </table>
+# 
+# $ \begin{align}
+# BM25(d) & = & \sum_{i:x_i=q_i=1} \log \Big[ \frac{N}{df_i}\Big] \times \frac{(k+1)tf_i}{k((1-b) + b \frac{l(d)}{\mu_l}) + tf_i}\\
+# \end{align}
+# $
+# 
+# $ \begin{align}
+# RSV(d) & = & \sum_{i:x_i=q_i=1} \log \frac{N}{df_i}
+# \end{align}
+# $
