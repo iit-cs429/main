@@ -24,4 +24,4 @@ localhost (typically `http://127.0.0.1:5000/`).
 
 The data in `documents.txt` contains snippets from the Wikipedia pages in the "Wiki Small" collection [here](http://www.search-engines-book.com/collections/).
 
-**Update 2/20:** There is some ambiguity in how to compute inverse document frequency for the query_to_vector method. The result in `[Log.txt](Log.txt)` uses simply `1 / df(term)`. The result in `[Log2.txt](Log2.txt)` uses `log(N / df(term))`, where `N` is the number of documents, and `df(term)` is the number of unique documents in which a term appears. I will accept either answer.
+**Update 2/20:** There is some ambiguity in how to compute inverse document frequency for the query_to_vector method. The result in [Log.txt](Log.txt) uses simply `1 / df(term)`. The result in [Log2.txt](Log2.txt) uses `log(N / df(term))`, where `N` is the number of documents, and `df(term)` is the number of unique documents in which a term appears. I will accept either answer.
