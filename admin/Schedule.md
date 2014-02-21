@@ -13,7 +13,7 @@
 | 2/11  | Evaluation                       | [Ch8](http://nlp.stanford.edu/IR-book/pdf/08eval.pdf)  | | [L09](../lectures/lec09)
 | 2/13  | Query Expansion                  | [Ch9](http://nlp.stanford.edu/IR-book/pdf/09expand.pdf)| | [L10](../lectures/lec10)
 | 2/18  | Probabilistic IR                 | [Ch11](http://nlp.stanford.edu/IR-book/pdf/11prob.pdf) | | [L11](../lectures/lec11)
-| 2/20  | Probabilistic IR                 | [Ch11](http://nlp.stanford.edu/IR-book/pdf/11prob.pdf) | [A2](../assignments/assignment2)
+| 2/20  | Probabilistic IR                 | [Ch11](http://nlp.stanford.edu/IR-book/pdf/11prob.pdf) | [A2](../assignments/assignment2) | [L12](../lectures/lec12)
 | 2/25  | Language Models                  | [Ch12](http://nlp.stanford.edu/IR-book/pdf/12lmodel.pdf) |
 | 2/27  | Language Models                  | [Ch12](http://nlp.stanford.edu/IR-book/pdf/12lmodel.pdf) |
 || **Part III: Classification**|
