@@ -17,9 +17,9 @@
   - F1
   - Mean Average Precision (MAP)
   
-4. Enter the results in the table in [Results.md](Results.md).
+4. Enter the results in the table in [Results.md](Results.md) in your private repository.
 
-5. For RSV, compute a precision/recall curve and plot it using [matplotlib](http://matplotlib.org/). Save it to a file called `pr.png`.
+5. For RSV, compute a precision/recall curve and plot it using [matplotlib](http://matplotlib.org/). Save it to a file called `pr.png`; commit that file to your private repository.
 
 
 
