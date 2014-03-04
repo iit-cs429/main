@@ -18,7 +18,7 @@
 | 2/27  | Language Models                  | [Ch12](http://nlp.stanford.edu/IR-book/pdf/12lmodel.pdf) | | [L14](../lectures/lec14)
 || **Part III: Classification**|
 | 3/04  | Naive Bayes                      | [Ch13](http://nlp.stanford.edu/IR-book/pdf/13bayes.pdf)|
-| 3/06  | Rocchio, KNN                     | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf) | [A3](../assignments/assignment3)
+| 3/06  | Rocchio, KNN                     | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf) | [A3](../assignments/assignment3) (due 3/9)
 | 3/11  | **Midterm**                      |                                                        |
 | 3/13  | Bias/variance                    | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf) |
 | 3/18  | **Spring Break**                 |                                                        |
