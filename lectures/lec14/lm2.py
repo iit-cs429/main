@@ -464,11 +464,15 @@ print 'Pr([the, olympics, a] | m_d_smooth10)=', pr_q_given_m(['the', 'olympics',
 # - $d_2:$ Quorus narrows quarter loss but revenue decreases further
 # - $\lambda=.5$
 # 
-# Suppose the query is revenue down. Then:
+# Suppose the query is **revenue down**. Then:
 # 
 # $P_{interp}(q|d_1) = $
 # 
 # $P_{interp}(q|d_2) = $
+# 
+# $\begin{align}P_{interp}(t|M_d) & = & \lambda P(t|M_d) + (1-\lambda) P(t|M_c)\\
+# & = & \lambda \frac{tf_{t, d}}{L_d} + (1-\lambda) \frac{cf_{t}}{T} 
+# \end{align}$
 # 
 
 # # Interpolation Example
