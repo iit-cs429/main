@@ -24,15 +24,15 @@
 | 3/18  | **Spring Break**                 |                                                        |
 | 3/20  | **Spring Break**                 |                                                        |
 | 3/25  | Logistic Regression/SVMs         | [Ch15](http://nlp.stanford.edu/IR-book/pdf/15svm.pdf)  |
-| 3/27  | Learning to Rank                 | Handouts                                               | [A4](../assignments/assignment4)
+| 3/27  | Learning to Rank                 | Handouts                                               | 
 ||**Part IV: Clustering**|
 | 4/01  | K-Means                          | [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) |
-| 4/03  | EM                               | [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) |
+| 4/03  | EM                               | [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) | [A4](../assignments/assignment4)
 | 4/08  | LSI                              | [Ch18](http://nlp.stanford.edu/IR-book/pdf/18lsi.pdf)  |
 | 4/10  | LDA                              | Handouts                                               |
 ||**Part V: Web Search**|
-| 4/15  | Web search overview              | [Ch19](http://nlp.stanford.edu/IR-book/pdf/19web.pdf)  | [A5](../assignments/assignment5)
-| 4/17  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) |
+| 4/15  | Web search overview              | [Ch19](http://nlp.stanford.edu/IR-book/pdf/19web.pdf)  | 
+| 4/17  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) | [A5](../assignments/assignment5)
 | 4/22  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) |
 | 4/24  | Web Crawling                     | [Ch20](http://nlp.stanford.edu/IR-book/pdf/20crawl.pdf)|
 | 4/29  | GrabBag                          | Handouts                                               |
