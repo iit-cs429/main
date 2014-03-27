@@ -1,0 +1,3 @@
+read 1893 training documents.
+read 1000 testing documents.
+accuracy=0.987, 8 false spam, 5 missed spam
