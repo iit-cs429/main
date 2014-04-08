@@ -27,7 +27,7 @@
 | 3/27  | Learning to Rank                 | Handouts                                               | 
 ||**Part IV: Clustering**|
 | 4/01  | K-Means                          | [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) |
-| 4/03  | EM                               | [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) | [A4](../assignments/assignment4)
+| 4/03  | EM                               | [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) | [A4](../assignments/assignment4) (due 4/6)
 | 4/08  | LSI                              | [Ch18](http://nlp.stanford.edu/IR-book/pdf/18lsi.pdf)  |
 | 4/10  | LDA                              | Handouts                                               |
 ||**Part V: Web Search**|
