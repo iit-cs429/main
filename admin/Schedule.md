@@ -18,18 +18,18 @@
 | 2/27  | Language Models                  | [Ch12](http://nlp.stanford.edu/IR-book/pdf/12lmodel.pdf) | | [L14](../lectures/lec14)
 || **Part III: Classification**|
 | 3/04  | Naive Bayes                      | [Ch13](http://nlp.stanford.edu/IR-book/pdf/13bayes.pdf)|
-| 3/06  | Rocchio, KNN                     | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf) | [A3](../assignments/assignment3) (due 3/9)
+| 3/06  | Logistic Regression                     | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf) | [A3](../assignments/assignment3) (due 3/9)
 | 3/11  | **Midterm**                      |                                                        |
-| 3/13  | Bias/variance                    | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf) |
+| 3/13  | KNN                   | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf) |
 | 3/18  | **Spring Break**                 |                                                        |
 | 3/20  | **Spring Break**                 |                                                        |
-| 3/25  | Logistic Regression/SVMs         | [Ch15](http://nlp.stanford.edu/IR-book/pdf/15svm.pdf)  |
-| 3/27  | Learning to Rank                 | Handouts                                               | 
+| 3/25  | Logistic Regression         | [Ch15](http://nlp.stanford.edu/IR-book/pdf/15svm.pdf)  |
+| 3/27  | Bias/Variance                 | Handouts                                               | 
 ||**Part IV: Clustering**|
-| 4/01  | K-Means                          | [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) |
-| 4/03  | EM                               | [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) | [A4](../assignments/assignment4) (due 4/6) | [L22](../lectures/lec22)
-| 4/08  | LSI                              | [Ch18](http://nlp.stanford.edu/IR-book/pdf/18lsi.pdf)  |
-| 4/10  | LDA                              | Handouts                                               |
+| 4/01  | Learning to Rank                         | [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) |
+| 4/03  | K-Means                               | [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) | [A4](../assignments/assignment4) (due 4/6) | [L22](../lectures/lec22)
+| 4/08  | EM                              | [Ch18](http://nlp.stanford.edu/IR-book/pdf/18lsi.pdf)  |
+| 4/10  | Word Clustering                              | Handouts                                               | | [L23](../lectures/lec23)
 ||**Part V: Web Search**|
 | 4/15  | Web search overview              | [Ch19](http://nlp.stanford.edu/IR-book/pdf/19web.pdf)  | 
 | 4/17  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) | [A5](../assignments/assignment5)
