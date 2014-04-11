@@ -1,6 +1,6 @@
 ## Assignment 5: Clustering
 
-In this assignment, you will implement k-means clustering to cluster together a sample of uer descriptions from Twitter.
+In this assignment, you will implement k-means clustering to cluster together a sample of user descriptions from Twitter. (Once again, I apologize for any offensive text you may be subjected to.) These are a somewhat random sample of 10,000 user profiles. They have already been tokenized.
 
 1. Download the data from <http://cs.iit.edu/~culotta/profiles.txt> to your working directory. (Make sure it is also in .gitignore).
 2. Implement the functions as indicated in `cluster.py`
