@@ -37,4 +37,4 @@
 | 4/24  | Web Crawling                     | [Ch20](http://nlp.stanford.edu/IR-book/pdf/20crawl.pdf)|
 | 4/29  | GrabBag                          | Handouts                                               |
 | 5/01  | Review                           |                                                        | [A6](../assignments/assignment6)
-| 5/07  | **Final Exam** (2-4pm)           |                                                        |
+| 5/07  | **Final Exam** (2-4pm) Wishnick Hall 115	           |                                                        |
