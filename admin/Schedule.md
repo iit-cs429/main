@@ -32,9 +32,9 @@
 | 4/10  | Word Clustering                              | Handouts                                               | | [L23](../lectures/lec23)
 ||**Part V: Web Search**|
 | 4/15  | Web search overview              | [Ch19](http://nlp.stanford.edu/IR-book/pdf/19web.pdf)  | 
-| 4/17  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) | [A5](../assignments/assignment5)
+| 4/17  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) | [A5](../assignments/assignment5) (Due 4/20)
 | 4/22  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) |
 | 4/24  | Web Crawling                     | [Ch20](http://nlp.stanford.edu/IR-book/pdf/20crawl.pdf)|
 | 4/29  | GrabBag                          | Handouts                                               |
 | 5/01  | Review                           |                                                        | [A6](../assignments/assignment6)
-| 5/07  | **Final Exam** (2-4pm)           |                                                        |
+| 5/07  | **Final Exam** (2-4pm) Wishnick Hall 115	           |                                                        |
