@@ -1,0 +1,9 @@
+Result for set1 
+set1/a.html	1.077
+set1/b.html	0.769
+set1/c.html	1.154
+Result for set2 
+set2/a.html	1.490
+set2/b.html	0.783
+set2/c.html	1.577
+set2/d.html	0.150
