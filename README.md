@@ -1,5 +1,5 @@
-### CS 429: Information Retrieval
-## Spring 2014
+### CS 429: Information Retrieval  
+**Spring 2014**
 
 This repository contains class files for CS 429: Information Retrieval, taught at the [Illinois Institute of Technology](http://cs.iit.edu) by [Aron Culotta](http://cs.iit.edu/~culotta).
 
