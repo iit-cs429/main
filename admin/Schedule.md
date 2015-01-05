@@ -18,7 +18,7 @@
 | 2/26  | Language Models                  | [Ch12](http://nlp.stanford.edu/IR-book/pdf/12lmodel.pdf) | | [L14](../lectures/lec14)
 || **Part III: Classification**|
 | 3/03  | Naive Bayes                      | [Ch13](http://nlp.stanford.edu/IR-book/pdf/13bayes.pdf)|
-| 3/05  | Logistic Regression                     | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf) | [A3](../assignments/assignment3) (due 3/9)
+| 3/05  | Logistic Regression                     | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf) | [A3](../assignments/assignment3) 
 | 3/10  | **Midterm**                      |                                                        |
 | 3/12  | KNN                   | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf) |
 | 3/17  | **Spring Break**                 |                                                        |
@@ -27,12 +27,12 @@
 | 3/26  | Bias/Variance                 | Handouts                                               | 
 ||**Part IV: Clustering**|
 | 3/31  | Learning to Rank                         | [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) |
-| 4/02  | K-Means                               | [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) | [A4](../assignments/assignment4) (due 4/6) | [L22](../lectures/lec22)
+| 4/02  | K-Means                               | [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) | [A4](../assignments/assignment4)          | [L22](../lectures/lec22)
 | 4/07  | EM                              | [Ch18](http://nlp.stanford.edu/IR-book/pdf/18lsi.pdf)  |
 | 4/09  | Word Clustering                              | Handouts                                               | | [L23](../lectures/lec23)
 ||**Part V: Web Search**|
 | 4/14  | Web search overview              | [Ch19](http://nlp.stanford.edu/IR-book/pdf/19web.pdf)  | 
-| 4/16  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) | [A5](../assignments/assignment5) (Due 4/20)
+| 4/16  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) | [A5](../assignments/assignment5)     
 | 4/21  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) | |  [L26](../lectures/lec26)
 | 4/23  | Web Crawling                     | [Ch20](http://nlp.stanford.edu/IR-book/pdf/20crawl.pdf)|
 | 4/28  | GrabBag                          | Handouts                                               |
