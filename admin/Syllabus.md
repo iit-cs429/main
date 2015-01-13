@@ -43,7 +43,7 @@ You can use the [electronic version](http://nlp.stanford.edu/IR-book/) of this b
 
 - Late assignments will **not** be accepted, unless:
   - There is an unavoidable medical, family, or other emergency.
-  - You notify me **prior** to the due dat
+  - You notify me **prior** to the due date
 
 ### Course Outcomes
 
