@@ -5,6 +5,6 @@ Ways to view these slides:
   ```
   git clone https://github.com/iit-cs429/main.git
   cd main/lectures/lec01
-  ipython notebook Introduction.ipynb
+  ipython notebook --matplotlib inline Introduction.ipynb
   ```
 2. The [online notebook version](http://nbviewer.ipython.org/github/iit-cs429/main/blob/master/lectures/lec01/Introduction.ipynb)
