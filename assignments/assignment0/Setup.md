@@ -19,11 +19,11 @@
 
 6. Clone your private class repository
 ```
-git clone https://github.com/iit-cs429/[iit-username].git
+git clone https://github.com/iit-cs429/[github-username]-asg.git
 ```
 E.g., for me this would be:
   ```
-   git clone https://github.com/iit-cs429/aculotta.git
+   git clone https://github.com/iit-cs429/aronwc-asg.git
   ```
   - You should have read/write (pull/push) access to your private repository.
   - This is where you will submit assignments.
