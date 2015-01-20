@@ -5,7 +5,7 @@
 -   **Meetings:** 3:15 - 4:30 pm T/R Stuart 238
 -   **E-mail:** culotta at cs.iit.edu
 -   **Phone:** 312-567-5261
--   **Office Hours:** T/R 11:00 a.m. - 12:00 p.m.
+-   **Office Hours:** T/R 10:00 a.m. - 11:00 a.m.
 -   **Office:** Stuart Hall 229B
 -   **TA:** TBD
 
