@@ -7,7 +7,7 @@
 -   **Phone:** 312-567-5261
 -   **Office Hours:** T/R 10:00 a.m. - 11:00 a.m.
 -   **Office:** Stuart Hall 229B
--   **TA:** TBD
+-   **TA:** Junzhe Zheng (jzheng9 at hawk.iit.edu). Office hours: Wed 1-2pm (room TBD)
 
 **Description:** Overview of fundamental issues of information retrieval with theoretical foundations. The information-retrieval techniques and theory, covering both effectiveness and run-time performance of information-retrieval systems are covered. The focus is on algorithms and heuristics used to find documents relevant to the user request and to find them fast. The course covers the architecture and components of the search engine such as parser, stemmer, index builder, and query processor. The students learn the material by building a prototype of such a search engine. Prerequisites: CS 331 or CS 401; requires strong programming knowledge. 3-0-3 (C) (T)
 
