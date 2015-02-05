@@ -1,11 +1,8 @@
 To submit an assignment:
 
-1. Update your private repository to get the assignment files:
-  ```
-  cd [my_repo_name]
-  git pull
-  ```
-  This will create a new directory, e.g., `assignment0`.
+1. Create a new directory in your private repo (e.g., a1 for assignment1).
+
+2. Copy the homework files from the main repository to your private repository (e.g., main/assignments/assignment1/*) 
 
 2. Do the homework, adding and modifying files in the assignment directory. **Commit often!**
 
