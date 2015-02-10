@@ -109,6 +109,8 @@ class Index(object):
 
     def query_to_vector(self, query_terms):
         """ Convert a list of query terms into a dict mapping term to inverse document frequency.
+	using log(N / df(term)), where N is number of documents and df(term) is the number of documents
+        that term appears in.
         Parameters:
         query_terms....list of terms
         """
