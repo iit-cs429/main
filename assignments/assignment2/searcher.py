@@ -140,7 +140,7 @@ class Index(object):
         pass
 
     def search(self, query, use_champions=False):
-        """ Return the document ids for documents matching the query. Assume that
+        """ Return a list of (document_id, score) pairs for documents matching the query. Assume that
         query is a single string, possible containing multiple words. Assume
         queries with multiple words are phrase queries. The steps are to:
 
