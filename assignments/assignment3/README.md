@@ -22,6 +22,20 @@
 5. For RSV, compute a precision/recall curve and plot it using [matplotlib](http://matplotlib.org/). Save it to a file called `pr.png`; commit that file to your private repository.
 
 
+Other clarifications:
+
+- You can use the same tokenizer/stemmer as the previous assignment.
+- You should report the average evaluation measures over all queries.
+- You should ignore query terms that do not appear in any document.
+- Compute precision/recall/F1 using only the top 20 results
+- When computing MAP, if a relevant document is not in the top 20, assume 0% precision for those relevant documents.
+- Note that IDs are assigned to queries and documents according to their position in the file, starting at ID 1. Thus, in TIME.REL, the line "1 268" indicates that the first query in TIME.QUE is relevant to the 268th document in TIME.ALL.
+
+
+
+
+
+
 
 
 
