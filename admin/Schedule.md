@@ -17,7 +17,7 @@
 | 2/24  | Language Models                  | [Ch12](http://nlp.stanford.edu/IR-book/pdf/12lmodel.pdf) | | [L13](../lectures/lec13)
 | 2/26  | Language Models                  | [Ch12](http://nlp.stanford.edu/IR-book/pdf/12lmodel.pdf) | | [L14](../lectures/lec14)
 || **Part III: Classification**|
-| 3/03  | Naive Bayes                      | [Ch13](http://nlp.stanford.edu/IR-book/pdf/13bayes.pdf)|
+| 3/03  | Naive Bayes                      | [Ch13](http://nlp.stanford.edu/IR-book/pdf/13bayes.pdf)| | [L15](../lectures/lec15)
 | 3/05  | Logistic Regression                     | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf) | [A3](../assignments/assignment3) 
 | 3/10  | **Midterm**                      |                                                        |
 | 3/12  | KNN                   | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf) |
