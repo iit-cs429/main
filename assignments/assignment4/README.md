@@ -1,6 +1,6 @@
 ## Assignment 4: Classification
 
-In this assignment, you'll implement a Naive Bayes classifier for spam filtering.
+In this assignment, you'll implement a Multinomial Naive Bayes classifier for spam filtering.
 
 Complete the classify.py method by following Figure 13.2 from your text (using add-one smoothing). I recommend reading Example 13.1 to test your understanding of this computation.
 
@@ -9,3 +9,5 @@ You should download the data [here](http://cs.iit.edu/~culotta/cs429/lingspam.zi
 Unzip the data in the same folder as `classify.py`. This will create train and test folders.
 
 The output of running `python classify.py` should match that in [Log.txt](Log.txt).
+
+**Please note:** This assignment asks for a Multinomial, not Bernoulli, Naive Bayes. See book and notest for distinction.
