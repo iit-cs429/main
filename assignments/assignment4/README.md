@@ -10,4 +10,4 @@ Unzip the data in the same folder as `classify.py`. This will create train and t
 
 The output of running `python classify.py` should match that in [Log.txt](Log.txt).
 
-**Please note:** This assignment asks for a Multinomial, not Bernoulli, Naive Bayes. See book and notest for distinction.
+**Please note:** This assignment asks for a Multinomial, not Bernoulli, Naive Bayes. See book and notes for distinction.
