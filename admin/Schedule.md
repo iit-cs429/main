@@ -20,7 +20,8 @@
 | 3/03  | Naive Bayes                      | [Ch13](http://nlp.stanford.edu/IR-book/pdf/13bayes.pdf)| | [L15](../lectures/lec15)
 | 3/05  | Logistic Regression                     | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf) | [A3](../assignments/assignment3) 
 | 3/10  | **Midterm**                      |                                                        |
-| 3/12  | KNN                   | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf) |
+| 3/12  | KNN                   | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf) | [L16](../lectures/lec16/bayes.pdf)
+| 3/05  | Logistic Regression                     | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf)
 | 3/17  | **Spring Break**                 |                                                        |
 | 3/19  | **Spring Break**                 |                                                        |
 | 3/24  | Logistic Regression         | [Ch15](http://nlp.stanford.edu/IR-book/pdf/15svm.pdf)  |
