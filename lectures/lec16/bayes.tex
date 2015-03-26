@@ -114,7 +114,7 @@ Commonly, $\epsilon=1$ is used (``plus one'' smoothing).
 \noindent{\bf Multinomial Naive Bayes}
 
 
-The preceeding assumes a binary event model; that is, $x_{ij} \in \{0,1\}}$. Alternatively, we can use term frequencies; i.e. $x_{ij} \in \mathcal{N}_+$. The term probabilities become:
+The preceeding assumes a binary event model; that is, $x_{ij} \in \{0,1\}$. Alternatively, we can use term frequencies; i.e. $x_{ij} \in \mathcal{N}_+$. The term probabilities become:
 
 $$
 p(x_{ij}=1 | y_i = 1) = \frac{T_{1j}}{\sum_k T_{1k}}
@@ -126,8 +126,13 @@ Smoothing operates differently for Multinomial than Bernoulli Naive Bayes:
 $$
 p(x_{ij}=1 | y_i = 1) = \frac{T_{1j} + \epsilon}{|V|\epsilon + \sum_k T_{1k}}
 $$
-where $|V|$ is the number of unique terms in the vocabulary. See your book (Ch13\footnote{http://nlp.stanford.edu/IR-book/pdf/13bayes.pdf}) for more details.
+where $|V|$ is the number of unique terms in the vocabulary.
 
+Note that in Multinomial Naive Bayes, to classify a new document, we only
+multiply terms that occur in the document:
+$$p(y_i|x_i) \propto p(y_i) \prod_{j \in n_i} p(x_{ij}|y_i)$$
+where $n_i$ iterates over {\bf tokens}, rather then {\bf terms}. That is, if the term {\it dog} occurs twice in document $i$, its corresponding probability $p($dog$|y_i)$ will appear twice in the product above.
 
+ See your book (Ch13\footnote{http://nlp.stanford.edu/IR-book/pdf/13bayes.pdf}) for more details.
 
 \end{document}
