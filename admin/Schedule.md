@@ -27,7 +27,7 @@
 | 3/24  | Logistic Regression         | [Ch15](http://nlp.stanford.edu/IR-book/pdf/15svm.pdf)  |
 | 3/26  | Bias/Variance                 | Handouts                                               | 
 ||**Part IV: Clustering**|
-| 3/31  | Learning to Rank                         | [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) |
+| 3/31  | Learning to Rank                         | | [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) |
 | 4/02  | K-Means                               | [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) | [A4](../assignments/assignment4)          | [L22](../lectures/lec22)
 | 4/07  | EM                              | [Ch18](http://nlp.stanford.edu/IR-book/pdf/18lsi.pdf)  |
 | 4/09  | Word Clustering                              | Handouts                                               | | [L23](../lectures/lec23)
