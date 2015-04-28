@@ -36,6 +36,6 @@
 | 4/16  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) | [A5](../assignments/assignment5)     
 | 4/21  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) | |  [L26](../lectures/lec26)
 | 4/23  | Web Crawling                     | [Ch20](http://nlp.stanford.edu/IR-book/pdf/20crawl.pdf)| 
-| 4/28  | Review                          |                                                | [A6](../assignments/assignment6)
+| 4/28  | Review                          |                                                | [A6](../assignments/assignment6) | [L28](../lectures/lec28)
 | 4/30  | **Final Exam**                           |                                                | 
 
