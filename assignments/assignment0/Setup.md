@@ -4,7 +4,7 @@
 
 2. Learn git by completing the online training course at <http://try.github.io>.
 
-3. Install the Python/SciPy stack on your computer (if you haven't already) by follwing the instructions here: <http://continuum.io/downloads>. We'll be using Python 2.7, **not** Python 3.
+3. Install the Python/SciPy stack on your computer (if you haven't already) by follwing the instructions here: <http://continuum.io/downloads>. We'll be using Python 3.5, **not** Python 2.
 
 4. Install Git
   - Windows:
@@ -31,7 +31,7 @@ E.g., for me this would be:
 7. Update your private repository with `git pull`
   - I will add files to your repository for each assignment.
 
-8. Modify the README.md file in your repository to list your name.
+8. Modify the README.md file in your repository to list your name, CWID, and IIT email address.
   - Checkin this change with:
 
   ```
