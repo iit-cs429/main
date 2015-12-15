@@ -22,8 +22,8 @@ You can use the [electronic version](http://nlp.stanford.edu/IR-book/) of this b
 - 250 points - [Assignments](../assignments) (5 @ 50 points each)
 - 100 points - Midterm
 - 100 points - Final
-- 32 points  - 1 quiz  <del>50 points - Quizzes / In-class assignments (5 @ 10 points each)</del>
-- **682 total points** <del>700 total points</del>
+- 50 points  - Quizzes  (5 @ 10 points each)
+- **500 total points**
 
 | **Percent** | **Grade** |
 |-------------|-----------|
