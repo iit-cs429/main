@@ -1,5 +1,6 @@
 ## CS429: Information Retrieval  
 *[Illinois Institute of Technology](http://iit.edu)*  
+**Spring 2016**
 
 **See the [Schedule](Schedule.md) for a detailed list of readings and due dates.**
 
