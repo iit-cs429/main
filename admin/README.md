@@ -1,3 +1,0 @@
-- [Syllabus](Syllabus.md)
-- [Schedule](Schedule.md)
-- [Resources](Resources.md)
