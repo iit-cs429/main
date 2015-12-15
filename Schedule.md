@@ -35,6 +35,7 @@
 | 4/14  | Web search overview              | [Ch19](http://nlp.stanford.edu/IR-book/pdf/19web.pdf)  | 
 | 4/19  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) | [A5](../assignments/assignment5)     
 | 4/21  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) | |  [L26](../lectures/lec26)
+<<<<<<< HEAD:Schedule.md
 | 4/26  | Web Crawling                     | [Ch20](http://nlp.stanford.edu/IR-book/pdf/20crawl.pdf)| 
 | 4/28  | Review                          |                                                | [A6](../assignments/assignment6)
 | TBA  | **Final Exam**                           |                                                | 
