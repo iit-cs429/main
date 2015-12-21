@@ -42,8 +42,7 @@ You can use the [electronic version](http://nlp.stanford.edu/IR-book/) of this b
 
 - Please read IIT's [Academic Honesty Policy](http://www.iit.edu/student_affairs/handbook/information_and_regulations/code_of_academic_honesty.shtml)
 - All work you turn in must be done by you alone.
-- All violations will be reported to `academichonesty@iit.edu`.
-- The first violation will result in a failing grade for that assignment/test. The second will result in a failing grade for the course.
+- **All violations will be reported to `academichonesty@iit.edu` and may result in a failing grade for the assignment and/or course.**
 
 
 **Late Submission Policy**
