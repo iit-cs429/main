@@ -12,13 +12,13 @@
 | 2/04  | Scoring for search               |[Ch7](http://nlp.stanford.edu/IR-book/pdf/07system.pdf)|  |  [L08](../lectures/lec08) | 
 | 2/09  | Evaluation  **(Aron travels)**                     | [Ch8](http://nlp.stanford.edu/IR-book/pdf/08eval.pdf)  | | [L09](../lectures/lec09)
 | 2/11  | Query Expansion **(Aron travels)**                 | [Ch9](http://nlp.stanford.edu/IR-book/pdf/09expand.pdf)| | [L10](../lectures/lec10)
-| 2/16  | Probabilistic IR                 | [Ch11](http://nlp.stanford.edu/IR-book/pdf/11prob.pdf) | | [L11](../lectures/lec11)
-| 2/18  | Probabilistic IR                 | [Ch11](http://nlp.stanford.edu/IR-book/pdf/11prob.pdf) | [A2](https://github.com/iit-cs429/assignments/tree/master/a2) | [L12](../lectures/lec12)
+| 2/16  | Probabilistic IR                 | [Ch11](http://nlp.stanford.edu/IR-book/pdf/11prob.pdf) | [A1](https://github.com/iit-cs429/assignments/tree/master/a1) | [L11](../lectures/lec11)
+| 2/18  | Probabilistic IR                 | [Ch11](http://nlp.stanford.edu/IR-book/pdf/11prob.pdf) | | [L12](../lectures/lec12)
 | 2/23  | Language Models                  | [Ch12](http://nlp.stanford.edu/IR-book/pdf/12lmodel.pdf) | | [L13](../lectures/lec13)
 | 2/25  | Language Models                  | [Ch12](http://nlp.stanford.edu/IR-book/pdf/12lmodel.pdf) | | [L14](../lectures/lec14)
 || **Part III: Classification**|
 | 3/01  | Naive Bayes                      | [Ch13](http://nlp.stanford.edu/IR-book/pdf/13bayes.pdf)| | [L15](../lectures/lec15)
-| 3/03  | Logistic Regression                     | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf) | [A3](https://github.com/iit-cs429/assignments/tree/master/a3) 
+| 3/03  | Logistic Regression                     | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf) | [A2](https://github.com/iit-cs429/assignments/tree/master/a2) 
 | 3/08  | **Midterm**                      |                                                        |
 | 3/10  | KNN                   | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf) | |  [L16](../lectures/lec16/bayes.pdf)
 | 3/15  | **Spring Break**                 |                                                        |
@@ -28,14 +28,14 @@
 | 3/29  | Bias/Variance                 | Handouts                                               | 
 ||**Part IV: Clustering**|
 | 3/31  | Learning to Rank                         |  [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) |
-| 4/05  | K-Means                               | [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) | [A4](https://github.com/iit-cs429/assignments/tree/master/a4)          | 
+| 4/05  | K-Means                               | [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) | [A3](https://github.com/iit-cs429/assignments/tree/master/a3)          | 
 | 4/07  | EM                              | [Ch18](http://nlp.stanford.edu/IR-book/pdf/18lsi.pdf)  | | [L22](../lectures/lec22)
 | 4/12  | Word Clustering                              | Handouts                                               | | [L23](../lectures/lec23)
 ||**Part V: Web Search**|
 | 4/14  | Web search overview              | [Ch19](http://nlp.stanford.edu/IR-book/pdf/19web.pdf)  | 
-| 4/19  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) | [A5](https://github.com/iit-cs429/assignments/tree/master/a5)     
+| 4/19  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) | [A4](https://github.com/iit-cs429/assignments/tree/master/a4)     
 | 4/21  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) | |  [L26](../lectures/lec26)
 | 4/26  | Web Crawling                     | [Ch20](http://nlp.stanford.edu/IR-book/pdf/20crawl.pdf)| 
-| 4/28  | Review                          |                                                | [A6](https://github.com/iit-cs429/assignments/tree/master/a6)
+| 4/28  | Review                          |                                                | [A5](https://github.com/iit-cs429/assignments/tree/master/a5)
 | TBA  | **Final Exam**                           |                                                | 
 
