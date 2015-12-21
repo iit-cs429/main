@@ -4,9 +4,9 @@
 | 1/12  | Boolean Search                   | [Ch1](http://nlp.stanford.edu/IR-book/pdf/01bool.pdf) | |[L01](../lectures/lec01)
 | 1/14  | Indexing I: stemming/stopping    | [Ch2](http://nlp.stanford.edu/IR-book/pdf/02voc.pdf)   | |[L02](../lectures/lec02)
 | 1/19  | Indexing II: phrases, skip lists, position | [Ch2](http://nlp.stanford.edu/IR-book/pdf/02voc.pdf)   | | [L03](../lectures/lec03)
-| 1/21  | Dictionaries                     | [Ch3](http://nlp.stanford.edu/IR-book/pdf/03dict.pdf)  | [A0](https://github.com/iit-cs429/assignments/tree/master/a0) | [L04](../lectures/lec04)
+| 1/21  | Dictionaries                     | [Ch3](http://nlp.stanford.edu/IR-book/pdf/03dict.pdf)  |  | [L04](../lectures/lec04)
 | 1/26  | Scalable indexing             | [Ch4](http://nlp.stanford.edu/IR-book/pdf/04const.pdf) | | [L05](../lectures/lec05)
-| 1/28  | Index compression                | [Ch5](http://nlp.stanford.edu/IR-book/pdf/05comp.pdf)  | |  [L06](../lectures/lec06)
+| 1/28  | Index compression                | [Ch5](http://nlp.stanford.edu/IR-book/pdf/05comp.pdf)  | [A0](https://github.com/iit-cs429/assignments/tree/master/a0) |  [L06](../lectures/lec06)
 || **Part II: Ranking**  |
 | 2/02  | Vector space model               | [Ch6](http://nlp.stanford.edu/IR-book/pdf/06vect.pdf)  | |  [L07](../lectures/lec07)
 | 2/04  | Scoring for search               |[Ch7](http://nlp.stanford.edu/IR-book/pdf/07system.pdf)| [A1](https://github.com/iit-cs429/assignments/tree/master/a1) |  [L08](../lectures/lec08) | [A1](../assignments/assignment1)
