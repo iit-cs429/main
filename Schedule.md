@@ -24,8 +24,8 @@
 | 3/15  | **Spring Break**                 |                                                        |
 | 3/17  | **Spring Break**                 |                                                        |
 | 3/22  | Logistic Regression **(Aron travels)**  | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf) | | [L17](../lectures/lec17)
-| 3/24  | Logistic Regression         | [Ch15](http://nlp.stanford.edu/IR-book/pdf/15svm.pdf)  | [A3](https://github.com/iit-cs429/assignments/tree/master/a3)  
-| 3/29  | Bias/Variance                 | Handouts                                               | 
+| 3/24  | Logistic Regression         | [Ch15](http://nlp.stanford.edu/IR-book/pdf/15svm.pdf)  |  
+| 3/29  | Bias/Variance                 | Handouts                                               | [A3](https://github.com/iit-cs429/assignments/tree/master/a3) 
 ||**Part IV: Clustering**|
 | 3/31  | Learning to Rank                         |  [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) |
 | 4/05  | K-Means                               | [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) |         | 
@@ -36,6 +36,6 @@
 | 4/19  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) |    
 | 4/21  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) | |  [L26](../lectures/lec26)
 | 4/26  | Web Crawling                     | [Ch20](http://nlp.stanford.edu/IR-book/pdf/20crawl.pdf)| 
-| 4/28  | Review                          |                                                | [A5](https://github.com/iit-cs429/assignments/tree/master/a5)
+| 4/28  | Review                          |                                                | [A4](https://github.com/iit-cs429/assignments/tree/master/a4)
 | TBA  | **Final Exam**                           |                                                | 
 
