@@ -33,7 +33,7 @@
 | 4/12  | Word Clustering                              | Handouts                                               | | [L23](../lectures/lec23)
 ||**Part V: Web Search**|
 | 4/14  | Web search overview              | [Ch19](http://nlp.stanford.edu/IR-book/pdf/19web.pdf)  | 
-| 4/19  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) | [A4](https://github.com/iit-cs429/assignments/tree/master/a4)     
+| 4/19  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) |    
 | 4/21  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) | |  [L26](../lectures/lec26)
 | 4/26  | Web Crawling                     | [Ch20](http://nlp.stanford.edu/IR-book/pdf/20crawl.pdf)| 
 | 4/28  | Review                          |                                                | [A5](https://github.com/iit-cs429/assignments/tree/master/a5)
