@@ -12,7 +12,7 @@
 | 2/04  | Scoring for search               |[Ch7](http://nlp.stanford.edu/IR-book/pdf/07system.pdf)| [A1](https://github.com/iit-cs429/assignments/tree/master/a1) |  [L08](../lectures/lec08) | [A1](../assignments/assignment1)
 | 2/09  | Evaluation  **(Aron travels)**                     | [Ch8](http://nlp.stanford.edu/IR-book/pdf/08eval.pdf)  | | [L09](../lectures/lec09)
 | 2/11  | Query Expansion **(Aron travels)**                 | [Ch9](http://nlp.stanford.edu/IR-book/pdf/09expand.pdf)| | [L10](../lectures/lec10)
-| 2/16  | Probabilistic IR **(Aron travels)**                | [Ch11](http://nlp.stanford.edu/IR-book/pdf/11prob.pdf) | | [L11](../lectures/lec11)
+| 2/16  | Probabilistic IR                 | [Ch11](http://nlp.stanford.edu/IR-book/pdf/11prob.pdf) | | [L11](../lectures/lec11)
 | 2/18  | Probabilistic IR                 | [Ch11](http://nlp.stanford.edu/IR-book/pdf/11prob.pdf) | [A2](https://github.com/iit-cs429/assignments/tree/master/a2) | [L12](../lectures/lec12)
 | 2/23  | Language Models                  | [Ch12](http://nlp.stanford.edu/IR-book/pdf/12lmodel.pdf) | | [L13](../lectures/lec13)
 | 2/25  | Language Models                  | [Ch12](http://nlp.stanford.edu/IR-book/pdf/12lmodel.pdf) | | [L14](../lectures/lec14)
