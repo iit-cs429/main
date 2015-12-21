@@ -2,7 +2,8 @@
 *[Illinois Institute of Technology](http://iit.edu)*  
 **Spring 2016**
 
-**See the [Schedule](Schedule.md) for a detailed list of readings and due dates.**
+- **See the [Schedule](Schedule.md) for a detailed list of readings and due dates.**
+- **See <https://github.com/iit-cs429/assignments> for assignments.**
 
 ### Overview
 
