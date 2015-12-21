@@ -9,7 +9,7 @@
 | 1/28  | Index compression                | [Ch5](http://nlp.stanford.edu/IR-book/pdf/05comp.pdf)  | [A0](https://github.com/iit-cs429/assignments/tree/master/a0) |  [L06](../lectures/lec06)
 || **Part II: Ranking**  |
 | 2/02  | Vector space model               | [Ch6](http://nlp.stanford.edu/IR-book/pdf/06vect.pdf)  | |  [L07](../lectures/lec07)
-| 2/04  | Scoring for search               |[Ch7](http://nlp.stanford.edu/IR-book/pdf/07system.pdf)| [A1](https://github.com/iit-cs429/assignments/tree/master/a1) |  [L08](../lectures/lec08) | [A1](../assignments/assignment1)
+| 2/04  | Scoring for search               |[Ch7](http://nlp.stanford.edu/IR-book/pdf/07system.pdf)|  |  [L08](../lectures/lec08) | 
 | 2/09  | Evaluation  **(Aron travels)**                     | [Ch8](http://nlp.stanford.edu/IR-book/pdf/08eval.pdf)  | | [L09](../lectures/lec09)
 | 2/11  | Query Expansion **(Aron travels)**                 | [Ch9](http://nlp.stanford.edu/IR-book/pdf/09expand.pdf)| | [L10](../lectures/lec10)
 | 2/16  | Probabilistic IR                 | [Ch11](http://nlp.stanford.edu/IR-book/pdf/11prob.pdf) | | [L11](../lectures/lec11)
