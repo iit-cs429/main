@@ -24,7 +24,7 @@ You can use the [electronic version](http://nlp.stanford.edu/IR-book/) of this b
 
 ### Grading
 
-- 250 points - [Assignments](../assignments) (5 @ 50 points each)
+- 250 points - [Assignments](https://github.com/iit-cs429/assignments) (5 @ 50 points each)
 - 100 points - Midterm
 - 100 points - Final
 - 60 points  - Quizzes  (4 @ 15 points each)
