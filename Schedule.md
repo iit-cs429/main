@@ -1,5 +1,6 @@
 
-**All assignments and quizzes are due at 11:59pm of the day listed. **
+**All assignments and quizzes are due at 11:59pm of the day listed.**
+
 
 | Date  | Topic                            | Readings                                               | Due | Lecture |
 | ----- |----------------------------------|--------------------------------------------------------|-----|----
