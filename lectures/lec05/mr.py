@@ -30,4 +30,4 @@ if __name__ == '__main__':
     runner.run()
     for line in runner.stream_output():
         key, value = mr_job.parse_output_line(line)
-        print key, value
+        print(key, value)
