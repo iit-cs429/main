@@ -24,7 +24,7 @@
 | 3/01  | Naive Bayes                      | [Ch13](http://nlp.stanford.edu/IR-book/pdf/13bayes.pdf)| | [L15](lectures/lec15)
 | 3/03  | Logistic Regression                     | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf) | [A2](https://github.com/iit-cs429/assignments/tree/master/a2) 
 | 3/08  | **Midterm**                      |                                                        |
-| 3/10  | KNN                   | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf) | |  [L16](lectures/lec16/bayes.pdf)
+| 3/10  | KNN                   | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf) | |  [L16](lectures/lec16/)
 | 3/15  | **Spring Break**                 |                                                        |
 | 3/17  | **Spring Break**                 |                                                        |
 | 3/22  | Logistic Regression **(Aron travels)**  | [Ch14](http://nlp.stanford.edu/IR-book/pdf/14vcat.pdf) | | [L17](lectures/lec17)
