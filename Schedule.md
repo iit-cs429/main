@@ -31,10 +31,10 @@
 | 3/24  | Logistic Regression         | [Ch15](http://nlp.stanford.edu/IR-book/pdf/15svm.pdf)  |  
 | 3/29  | Learning to Rank                 | [Ch15](http://nlp.stanford.edu/IR-book/pdf/15svm.pdf)                                               | [A3](https://github.com/iit-cs429/assignments/tree/master/a3) | [SVM](http://web.stanford.edu/class/cs276/handouts/lecture13-SVMs.ppt) / [LTR](http://web.stanford.edu/class/cs276/handouts/lecture14-learning-ranking.ppt) 
 ||**Part IV: Clustering**|
-| 3/31  | Clustering Overview                         |  [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) | | [L19](lectures/lec19)
-| 4/05  | K-Means                               | [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) |   [Q2](https://blackboard.iit.edu/webapps/blackboard/content/listContentEditable.jsp?content_id=_362431_1&course_id=_47700_1)       | 
-| 4/07  | EM                              | [Ch18](http://nlp.stanford.edu/IR-book/pdf/18lsi.pdf)  | | [L20](lectures/lec20)
-| 4/12  | Word Clustering                              | Handouts                                               | | [L21](lectures/lec21)
+| 3/31  | K-Means                        |  [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) | | [L19](lectures/lec19)
+| 4/05  | EM                               | [Ch16](http://nlp.stanford.edu/IR-book/pdf/16flat.pdf) |  [L20](lectures/lec20) [Q2](https://blackboard.iit.edu/webapps/blackboard/content/listContentEditable.jsp?content_id=_362431_1&course_id=_47700_1)       | 
+| 4/07  |  Word Clustering                              | [Ch18](http://nlp.stanford.edu/IR-book/pdf/18lsi.pdf)  | | [L21](lectures/lec21)
+| 4/12  | Word Clustering                              | Handouts                                               | | [L22](lectures/lec22)
 ||**Part V: Web Search**|
 | 4/14  | Web search overview              | [Ch19](http://nlp.stanford.edu/IR-book/pdf/19web.pdf)  | [Bonus](https://github.com/iit-cs429/assignments/tree/master/bonus)
 | 4/19  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) |    
