@@ -1,5 +1,5 @@
 See Stanford slides as well:
 
-http://en.wikipedia.org/wiki/Cosine_similarity#Properties
+http://web.stanford.edu/class/cs276/handouts/lecture15-distributed-representations.pdf
 
 
