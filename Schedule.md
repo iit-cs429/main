@@ -36,9 +36,9 @@
 | 4/07  |  Word Clustering                              | [Ch18](http://nlp.stanford.edu/IR-book/pdf/18lsi.pdf)  | | [L21](lectures/lec21)
 | 4/12  | Word Clustering                              |                                                | | [L22](lectures/lec22)
 ||**Part V: Web Search**|
-| 4/14  | Web search overview              | [Ch19](http://nlp.stanford.edu/IR-book/pdf/19web.pdf)  | [Bonus](https://github.com/iit-cs429/assignments/tree/master/bonus)
-| 4/19  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) |    
-| 4/21  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) | |  [L26](lectures/lec26)
+| 4/14  | PageRank              | [Ch19](http://nlp.stanford.edu/IR-book/pdf/19web.pdf)  | [Bonus](https://github.com/iit-cs429/assignments/tree/master/bonus) | [L23](lectures/lec23)
+| 4/19  | PageRank                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) |    | [L24](lectures/lec24)
+| 4/21  | HITS                         | [Ch21](http://nlp.stanford.edu/IR-book/pdf/21link.pdf) | |  [L25](lectures/lec25)
 | 4/26  | Web Crawling                     | [Ch20](http://nlp.stanford.edu/IR-book/pdf/20crawl.pdf)| [Q3](https://blackboard.iit.edu/webapps/blackboard/content/listContentEditable.jsp?content_id=_362431_1&course_id=_47700_1)  
 | 4/28  | Review                          |                                                | [A4](https://github.com/iit-cs429/assignments/tree/master/a4)
 | 5/3  | **Final Exam:** 10:30am-12:30pm, SB104                           |                                                | 
